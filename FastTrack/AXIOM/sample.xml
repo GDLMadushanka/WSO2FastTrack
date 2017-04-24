@@ -1,0 +1,18 @@
+<ns1:EmployeeInformation xmlns:ns1="http://www.axiom.org/article/oxygentank">
+    <Employee>
+        <ns1:Name>Dihini Himahansi</ns1:Name>
+        <Division>Engineering</Division>
+        <Address type="Home">
+            <City>Ambalangoda</City>
+            <Country>Sri Lanka</Country>
+        </Address>
+    </Employee>
+    <ns1:Employee>
+        <ns1:Name>Thushari Damayanthi</ns1:Name>
+        <Division>Business Development</Division>
+        <Address type="Temporary">
+            <City>Rajagiriya</City>
+            <Country>Sri Lanka</Country>
+        </Address>
+    </ns1:Employee>
+</ns1:EmployeeInformation>

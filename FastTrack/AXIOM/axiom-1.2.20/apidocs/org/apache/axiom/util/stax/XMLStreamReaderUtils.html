@@ -1,0 +1,422 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>XMLStreamReaderUtils (Apache Axiom)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="XMLStreamReaderUtils (Apache Axiom)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/XMLStreamReaderUtils.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/axiom/util/stax/XMLStreamIOException.html" title="class in org.apache.axiom.util.stax"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/axiom/util/stax/XMLStreamWriterUtils.html" title="class in org.apache.axiom.util.stax"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/axiom/util/stax/XMLStreamReaderUtils.html" target="_top">Frames</a></li>
+<li><a href="XMLStreamReaderUtils.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.axiom.util.stax</div>
+<h2 title="Class XMLStreamReaderUtils" class="title">Class XMLStreamReaderUtils</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.axiom.util.stax.XMLStreamReaderUtils</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">XMLStreamReaderUtils</span>
+extends <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">Contains utility methods to work with <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> objects, including the extension
+ defined by <a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler"><code>DataHandlerReader</code></a>. In addition to <a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler"><code>DataHandlerReader</code></a> support, this
+ class also provides support for the legacy extension mechanism described below.
+ 
+ <h3>Legacy XMLStreamReader extensions for optimized base64 handling</h3>
+ 
+ <p>
+ <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> instances supporting the legacy extension must conform to the following
+ requirements:
+ </p>
+ <ol>
+ <li><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true#getProperty(java.lang.String)" title="class or interface in javax.xml.stream"><code>XMLStreamReader.getProperty(String)</code></a> must return <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html?is-external=true#TRUE" title="class or interface in java.lang"><code>Boolean.TRUE</code></a> for the
+ property identified by <a href="../../../../../org/apache/axiom/om/OMConstants.html#IS_DATA_HANDLERS_AWARE"><code>OMConstants.IS_DATA_HANDLERS_AWARE</code></a>,
+ regardless of the current event. The property is assumed to be immutable and its value must not
+ change during the lifetime of the <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> implementation.</li>
+ <li>
+ <p>
+ If the <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> wishes to expose base64 encoded content using a
+ <a href="http://download.oracle.com/javaee/1.4/api/javax/activation/DataHandler.html?is-external=true" title="class or interface in javax.activation"><code>DataHandler</code></a> object, it must do so using a single
+ <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamConstants.html?is-external=true#CHARACTERS" title="class or interface in javax.xml.stream"><code>XMLStreamConstants.CHARACTERS</code></a> event.
+ </p>
+ <p>
+ To maintain compatibility with consumers that are unaware of the extensions described here, the
+ implementation should make sure that <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true#getText()" title="class or interface in javax.xml.stream"><code>XMLStreamReader.getText()</code></a>,
+ <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true#getTextStart()" title="class or interface in javax.xml.stream"><code>XMLStreamReader.getTextStart()</code></a>, <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true#getTextLength()" title="class or interface in javax.xml.stream"><code>XMLStreamReader.getTextLength()</code></a>,
+ <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true#getTextCharacters()" title="class or interface in javax.xml.stream"><code>XMLStreamReader.getTextCharacters()</code></a>,
+ <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true#getTextCharacters(int, char[], int, int)" title="class or interface in javax.xml.stream"><code>XMLStreamReader.getTextCharacters(int, char[], int, int)</code></a> and
+ <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true#getElementText()" title="class or interface in javax.xml.stream"><code>XMLStreamReader.getElementText()</code></a> behave as expected for this type of event, i.e. return
+ the base64 representation of the binary content.
+ </p>
+ </li>
+ <li><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true#getProperty(java.lang.String)" title="class or interface in javax.xml.stream"><code>XMLStreamReader.getProperty(String)</code></a> must return <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html?is-external=true#TRUE" title="class or interface in java.lang"><code>Boolean.TRUE</code></a> for the
+ property identified by <a href="../../../../../org/apache/axiom/om/OMConstants.html#IS_BINARY"><code>OMConstants.IS_BINARY</code></a> if the current event is
+ a <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamConstants.html?is-external=true#CHARACTERS" title="class or interface in javax.xml.stream"><code>XMLStreamConstants.CHARACTERS</code></a> event representing base64 encoded binary content and for
+ which a <a href="http://download.oracle.com/javaee/1.4/api/javax/activation/DataHandler.html?is-external=true" title="class or interface in javax.activation"><code>DataHandler</code></a> is available. For all other events, the returned
+ value must be <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html?is-external=true#FALSE" title="class or interface in java.lang"><code>Boolean.FALSE</code></a>.</li>
+ <li>
+ <p>
+ If for a given event, the implementation returned <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html?is-external=true#TRUE" title="class or interface in java.lang"><code>Boolean.TRUE</code></a> for the
+ <a href="../../../../../org/apache/axiom/om/OMConstants.html#IS_BINARY"><code>OMConstants.IS_BINARY</code></a> property, then a call to
+ <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true#getProperty(java.lang.String)" title="class or interface in javax.xml.stream"><code>XMLStreamReader.getProperty(String)</code></a> with argument
+ <a href="../../../../../org/apache/axiom/om/OMConstants.html#DATA_HANDLER"><code>OMConstants.DATA_HANDLER</code></a> must return the corresponding
+ <a href="http://download.oracle.com/javaee/1.4/api/javax/activation/DataHandler.html?is-external=true" title="class or interface in javax.activation"><code>DataHandler</code></a> object.
+ </p>
+ <p>
+ The <a href="../../../../../org/apache/axiom/om/OMConstants.html#DATA_HANDLER"><code>OMConstants.DATA_HANDLER</code></a> property is undefined for any other type
+ of event. This implies that the consumer of the <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> must check the
+ <a href="../../../../../org/apache/axiom/om/OMConstants.html#IS_BINARY"><code>OMConstants.IS_BINARY</code></a> property before retrieving the
+ <a href="../../../../../org/apache/axiom/om/OMConstants.html#DATA_HANDLER"><code>OMConstants.DATA_HANDLER</code></a> property.
+ </p>
+ </li>
+ </ol>
+ The extension mechanism described here has been deprecated mainly because it doesn't support
+ deferred loading of the binary content.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://download.oracle.com/javaee/1.4/api/javax/activation/DataHandler.html?is-external=true" title="class or interface in javax.activation">DataHandler</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/util/stax/XMLStreamReaderUtils.html#getDataHandlerFromElement(javax.xml.stream.XMLStreamReader)">getDataHandlerFromElement</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;reader)</code>
+<div class="block">Get a <a href="http://download.oracle.com/javaee/1.4/api/javax/activation/DataHandler.html?is-external=true" title="class or interface in javax.activation"><code>DataHandler</code></a> for the binary data encoded in an element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler">DataHandlerReader</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/util/stax/XMLStreamReaderUtils.html#getDataHandlerReader(javax.xml.stream.XMLStreamReader)">getDataHandlerReader</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;reader)</code>
+<div class="block">Get the <a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler"><code>DataHandlerReader</code></a> extension for a given <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a>, if
+ available.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/util/stax/XMLStreamReaderUtils.html#getElementTextAsStream(javax.xml.stream.XMLStreamReader, boolean)">getElementTextAsStream</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;reader,
+                      boolean&nbsp;allowNonTextChildren)</code>
+<div class="block">Get the text content of the current element as a <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io"><code>Reader</code></a> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/util/stax/XMLStreamReaderUtils.html#getOriginalXMLStreamReader(javax.xml.stream.XMLStreamReader)">getOriginalXMLStreamReader</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser)</code>
+<div class="block">Searches the wrapper and delegate classes to find the original <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/util/stax/XMLStreamReaderUtils.html#processGetProperty(org.apache.axiom.ext.stax.datahandler.DataHandlerReader, java.lang.String)">processGetProperty</a></strong>(<a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler">DataHandlerReader</a>&nbsp;extension,
+                  <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;propertyName)</code>
+<div class="block">Helper method to implement <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true#getProperty(java.lang.String)" title="class or interface in javax.xml.stream"><code>XMLStreamReader.getProperty(String)</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/util/stax/XMLStreamReaderUtils.html#writeTextTo(javax.xml.stream.XMLStreamReader, java.io.Writer)">writeTextTo</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;reader,
+           <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;writer)</code>
+<div class="block">Get the character data for the current event from the given reader and
+ write it to the given writer.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getDataHandlerReader(javax.xml.stream.XMLStreamReader)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDataHandlerReader</h4>
+<pre>public static&nbsp;<a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler">DataHandlerReader</a>&nbsp;getDataHandlerReader(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;reader)</pre>
+<div class="block">Get the <a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler"><code>DataHandlerReader</code></a> extension for a given <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a>, if
+ available. If the <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> only supports the legacy extension (as described
+ above), then this method will return a compatibility wrapper. Note that this wrapper doesn't
+ support deferred loading of the binary content.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>reader</code> - the stream reader to get the <a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler"><code>DataHandlerReader</code></a> extension from</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the implementation of the extension, or <code>null</code> if the
+         <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> doesn't expose base64 encoded binary content as
+         <a href="http://download.oracle.com/javaee/1.4/api/javax/activation/DataHandler.html?is-external=true" title="class or interface in javax.activation"><code>DataHandler</code></a> objects.</dd></dl>
+</li>
+</ul>
+<a name="processGetProperty(org.apache.axiom.ext.stax.datahandler.DataHandlerReader, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>processGetProperty</h4>
+<pre>public static&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;processGetProperty(<a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler">DataHandlerReader</a>&nbsp;extension,
+                        <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;propertyName)</pre>
+<div class="block">Helper method to implement <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true#getProperty(java.lang.String)" title="class or interface in javax.xml.stream"><code>XMLStreamReader.getProperty(String)</code></a>. This method
+ processes the properties defined by <a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html#PROPERTY"><code>DataHandlerReader.PROPERTY</code></a> and the legacy
+ extension mechanism (as described above). It can therefore be used to make a
+ <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> implementation compatible with code that expects it to implement this
+ legacy extension.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>extension</code> - the reference to the <a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler"><code>DataHandlerReader</code></a> extension for the
+            <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> implementation</dd><dd><code>propertyName</code> - the name of the property, as passed to the
+            <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true#getProperty(java.lang.String)" title="class or interface in javax.xml.stream"><code>XMLStreamReader.getProperty(String)</code></a> method</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the property value as specified by the <a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler"><code>DataHandlerReader</code></a> or legacy extension;
+         <code>null</code> if the property is not specified by any of these two extensions</dd></dl>
+</li>
+</ul>
+<a name="getDataHandlerFromElement(javax.xml.stream.XMLStreamReader)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDataHandlerFromElement</h4>
+<pre>public static&nbsp;<a href="http://download.oracle.com/javaee/1.4/api/javax/activation/DataHandler.html?is-external=true" title="class or interface in javax.activation">DataHandler</a>&nbsp;getDataHandlerFromElement(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;reader)
+                                             throws <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<div class="block">Get a <a href="http://download.oracle.com/javaee/1.4/api/javax/activation/DataHandler.html?is-external=true" title="class or interface in javax.activation"><code>DataHandler</code></a> for the binary data encoded in an element. The method supports
+ base64 encoded character data as well as optimized binary data through the
+ <a href="../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler"><code>DataHandlerReader</code></a> extension.
+ <p>
+ <em>Precondition</em>: the reader is on a <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamConstants.html?is-external=true#START_ELEMENT" title="class or interface in javax.xml.stream"><code>XMLStreamConstants.START_ELEMENT</code></a>
+ <p>
+ <em>Postcondition</em>: the reader is on the corresponding
+ <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamConstants.html?is-external=true#END_ELEMENT" title="class or interface in javax.xml.stream"><code>XMLStreamConstants.END_ELEMENT</code></a></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>reader</code> - the stream to read the data from</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the binary data from the element</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="writeTextTo(javax.xml.stream.XMLStreamReader, java.io.Writer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeTextTo</h4>
+<pre>public static&nbsp;void&nbsp;writeTextTo(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;reader,
+               <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;writer)
+                        throws <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a>,
+                               <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Get the character data for the current event from the given reader and
+ write it to the given writer. The method will try to figure out the most
+ efficient way to copy the data without unnecessary buffering or
+ conversions between strings and character arrays.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>reader</code> - the reader to get the character data from</dd><dd><code>writer</code> - the writer to write the character data to</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code> - if the underlying XML source is not well-formed</dd>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs when writing the character data</dd>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if this state is not a valid text state.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/axiom/ext/stax/CharacterDataReader.html" title="interface in org.apache.axiom.ext.stax"><code>CharacterDataReader</code></a></dd></dl>
+</li>
+</ul>
+<a name="getElementTextAsStream(javax.xml.stream.XMLStreamReader, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getElementTextAsStream</h4>
+<pre>public static&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a>&nbsp;getElementTextAsStream(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;reader,
+                            boolean&nbsp;allowNonTextChildren)</pre>
+<div class="block">Get the text content of the current element as a <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io"><code>Reader</code></a> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>reader</code> - The XML stream reader to read the element text from. The reader must be positioned
+            on a <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamConstants.html?is-external=true#START_ELEMENT" title="class or interface in javax.xml.stream"><code>XMLStreamConstants.START_ELEMENT</code></a> event.</dd><dd><code>allowNonTextChildren</code> - If set to <code>true</code>, non text child nodes are allowed and skipped. If set
+            to <code>false</code> only text nodes are allowed and the presence of any other
+            type of child node will trigger an exception.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>The reader from which the element text can be read. After the reader has reported the
+         end of the stream, the XML stream reader will be positioned on the
+         <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamConstants.html?is-external=true#END_ELEMENT" title="class or interface in javax.xml.stream"><code>XMLStreamConstants.END_ELEMENT</code></a> event corresponding to the initial
+         <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamConstants.html?is-external=true#START_ELEMENT" title="class or interface in javax.xml.stream"><code>XMLStreamConstants.START_ELEMENT</code></a> event. Calling <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Reader.html?is-external=true#close()" title="class or interface in java.io"><code>Reader.close()</code></a> on the
+         returned reader has no effect. Any parser exception will be reported by the reader
+         using <a href="../../../../../org/apache/axiom/util/stax/XMLStreamIOException.html" title="class in org.apache.axiom.util.stax"><code>XMLStreamIOException</code></a>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the XML stream reader is not positioned on a
+             <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamConstants.html?is-external=true#START_ELEMENT" title="class or interface in javax.xml.stream"><code>XMLStreamConstants.START_ELEMENT</code></a> event</dd></dl>
+</li>
+</ul>
+<a name="getOriginalXMLStreamReader(javax.xml.stream.XMLStreamReader)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getOriginalXMLStreamReader</h4>
+<pre>public static&nbsp;<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;getOriginalXMLStreamReader(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser)</pre>
+<div class="block">Searches the wrapper and delegate classes to find the original <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a>.
+ This method should only be used when a consumer of Axiom really needs to 
+ access the original stream reader.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parser</code> - XMLStreamReader used by Axiom</dd>
+<dt><span class="strong">Returns:</span></dt><dd>original parser</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/XMLStreamReaderUtils.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/axiom/util/stax/XMLStreamIOException.html" title="class in org.apache.axiom.util.stax"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/axiom/util/stax/XMLStreamWriterUtils.html" title="class in org.apache.axiom.util.stax"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/axiom/util/stax/XMLStreamReaderUtils.html" target="_top">Frames</a></li>
+<li><a href="XMLStreamReaderUtils.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &copy; <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

@@ -1,0 +1,936 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Uses of Interface org.apache.axiom.om.OMElement (Apache Axiom)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Interface org.apache.axiom.om.OMElement (Apache Axiom)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/axiom/om/class-use/OMElement.html" target="_top">Frames</a></li>
+<li><a href="OMElement.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h2 title="Uses of Interface org.apache.axiom.om.OMElement" class="title">Uses of Interface<br>org.apache.axiom.om.OMElement</h2>
+</div>
+<div class="classUseContainer">
+<ul class="blockList">
+<li class="blockList">
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing packages, and an explanation">
+<caption><span>Packages that use <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.axiom.om">org.apache.axiom.om</a></td>
+<td class="colLast">
+<div class="block">Contains core interfaces of the Axiom API.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.axiom.om.ds.custombuilder">org.apache.axiom.om.ds.custombuilder</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.axiom.om.impl">org.apache.axiom.om.impl</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.axiom.om.impl.builder">org.apache.axiom.om.impl.builder</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.axiom.om.impl.util">org.apache.axiom.om.impl.util</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.axiom.om.util">org.apache.axiom.om.util</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.axiom.om.util.jaxb">org.apache.axiom.om.util.jaxb</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.axiom.om.xpath">org.apache.axiom.om.xpath</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.axiom.soap">org.apache.axiom.soap</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.axiom.soap.impl.builder">org.apache.axiom.soap.impl.builder</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<ul class="blockList">
+<li class="blockList"><a name="org.apache.axiom.om">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/om/package-summary.html">org.apache.axiom.om</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subinterfaces, and an explanation">
+<caption><span>Subinterfaces of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/om/package-summary.html">org.apache.axiom.om</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Interface and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/OMSourcedElement.html" title="interface in org.apache.axiom.om">OMSourcedElement</a></strong></code>
+<div class="block">Element whose data is backed by an arbitrary Java object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/om/package-summary.html">org.apache.axiom.om</a> that return <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMElement.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMElement.html#cloneOMElement()">cloneOMElement</a></strong>()</code>
+<div class="block">Clones this element and its descendants using default options.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMFactory.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMFactory.html#createOMElement(javax.xml.namespace.QName)">createOMElement</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qname)</code>
+<div class="block">Create an element with the given <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMFactory.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMFactory.html#createOMElement(javax.xml.namespace.QName, org.apache.axiom.om.OMContainer)">createOMElement</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qname,
+               <a href="../../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>&nbsp;parent)</code>
+<div class="block">Create an element with the given <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a> and parent.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMFactory.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMFactory.html#createOMElement(java.lang.String, org.apache.axiom.om.OMNamespace)">createOMElement</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName,
+               <a href="../../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;ns)</code>
+<div class="block">Create an element with the given name.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMFactory.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMFactory.html#createOMElement(java.lang.String, org.apache.axiom.om.OMNamespace, org.apache.axiom.om.OMContainer)">createOMElement</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName,
+               <a href="../../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;ns,
+               <a href="../../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>&nbsp;parent)</code>
+<div class="block">Create an element with the given name and parent.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMFactory.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMFactory.html#createOMElement(java.lang.String, java.lang.String, java.lang.String)">createOMElement</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName,
+               <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;namespaceURI,
+               <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix)</code>
+<div class="block">Create an element with the given name.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMXMLParserWrapper.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#getDocumentElement()">getDocumentElement</a></strong>()</code>
+<div class="block">Get the document element, i.e. the root element of the document.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMXMLParserWrapper.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#getDocumentElement(boolean)">getDocumentElement</a></strong>(boolean&nbsp;discardDocument)</code>
+<div class="block">Get the document element, optionally discarding the document.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMContainer.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMContainer.html#getFirstChildWithName(javax.xml.namespace.QName)">getFirstChildWithName</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qname)</code>
+<div class="block">Returns the first child in document order that matches the given QName.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMElement.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMElement.html#getFirstElement()">getFirstElement</a></strong>()</code>
+<div class="block">Returns the first child element of the element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMDocument.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMDocument.html#getOMDocumentElement()">getOMDocumentElement</a></strong>()</code>
+<div class="block">Get the document element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMAttribute.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMAttribute.html#getOwner()">getOwner</a></strong>()</code>
+<div class="block">Returns the owner element of this attribute</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/om/package-summary.html">org.apache.axiom.om</a> with parameters of type <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">OMXMLParserWrapper.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#discard(org.apache.axiom.om.OMElement)">discard</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;el)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Use <a href="../../../../../org/apache/axiom/om/OMNode.html#discard()"><code>OMNode.discard()</code></a> to discard elements.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">OMDocument.</span><code><strong><a href="../../../../../org/apache/axiom/om/OMDocument.html#setOMDocumentElement(org.apache.axiom.om.OMElement)">setOMDocumentElement</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;documentElement)</code>
+<div class="block">Set the document element of the XML document.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.axiom.om.ds.custombuilder">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/om/ds/custombuilder/package-summary.html">org.apache.axiom.om.ds.custombuilder</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/om/ds/custombuilder/package-summary.html">org.apache.axiom.om.ds.custombuilder</a> that return <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">ByteArrayCustomBuilder.</span><code><strong><a href="../../../../../org/apache/axiom/om/ds/custombuilder/ByteArrayCustomBuilder.html#create(java.lang.String, java.lang.String, org.apache.axiom.om.OMContainer, javax.xml.stream.XMLStreamReader, org.apache.axiom.om.OMFactory)">create</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;namespace,
+      <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localPart,
+      <a href="../../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>&nbsp;parent,
+      <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;reader,
+      <a href="../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;factory)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.axiom.om.impl">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/om/impl/package-summary.html">org.apache.axiom.om.impl</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subinterfaces, and an explanation">
+<caption><span>Subinterfaces of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/om/impl/package-summary.html">org.apache.axiom.om.impl</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Interface and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/impl/OMElementEx.html" title="interface in org.apache.axiom.om.impl">OMElementEx</a></strong></code>
+<div class="block">Interface that is used internally by Axiom and that should not be considered being part of the
+ public API.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.axiom.om.impl.builder">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/om/impl/builder/package-summary.html">org.apache.axiom.om.impl.builder</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/om/impl/builder/package-summary.html">org.apache.axiom.om.impl.builder</a> that return <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">StAXOMBuilder.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/StAXOMBuilder.html#constructNode(org.apache.axiom.om.OMContainer, java.lang.String)">constructNode</a></strong>(<a href="../../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>&nbsp;parent,
+             <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;elementName)</code>
+<div class="block">Instantiate the appropriate <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om"><code>OMElement</code></a> implementation for the current element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">CustomBuilder.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html#create(java.lang.String, java.lang.String, org.apache.axiom.om.OMContainer, javax.xml.stream.XMLStreamReader, org.apache.axiom.om.OMFactory)">create</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;namespace,
+      <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localPart,
+      <a href="../../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>&nbsp;parent,
+      <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;reader,
+      <a href="../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;factory)</code>
+<div class="block">Create an OMElement for this whole subtree.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">OMFactoryEx.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/OMFactoryEx.html#createOMElement(java.lang.String, org.apache.axiom.om.OMContainer, org.apache.axiom.om.OMXMLParserWrapper)">createOMElement</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName,
+               <a href="../../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>&nbsp;parent,
+               <a href="../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a>&nbsp;builder)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">StAXOMBuilder.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/StAXOMBuilder.html#getDocumentElement()">getDocumentElement</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">StAXOMBuilder.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/StAXOMBuilder.html#getDocumentElement(boolean)">getDocumentElement</a></strong>(boolean&nbsp;discardDocument)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/om/impl/builder/package-summary.html">org.apache.axiom.om.impl.builder</a> with parameters of type <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">StAXBuilder.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#discard(org.apache.axiom.om.OMElement)">discard</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><span class="strong">StAXBuilder.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#processAttributes(org.apache.axiom.om.OMElement)">processAttributes</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;node)</code>
+<div class="block">Method processAttributes.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><span class="strong">StAXOMBuilder.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/StAXOMBuilder.html#processNamespaceData(org.apache.axiom.om.OMElement)">processNamespaceData</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;node)</code>
+<div class="block">Method processNamespaceData.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><span class="strong">StAXBuilder.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#processNamespaceData(org.apache.axiom.om.OMElement)">processNamespaceData</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;node)</code>
+<div class="block">Method processNamespaceData.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="strong">BuilderUtil.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/BuilderUtil.html#setNamespace(org.apache.axiom.om.OMElement, java.lang.String, java.lang.String, boolean)">setNamespace</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+            <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;namespaceURI,
+            <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix,
+            boolean&nbsp;namespaceURIInterning)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/axiom/om/impl/builder/package-summary.html">org.apache.axiom.om.impl.builder</a> with parameters of type <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/StAXOMBuilder.html#StAXOMBuilder(org.apache.axiom.om.OMFactory, javax.xml.stream.XMLStreamReader, org.apache.axiom.om.OMElement)">StAXOMBuilder</a></strong>(<a href="../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;factory,
+             <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+             <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Please use the <a href="../../../../../org/apache/axiom/om/OMXMLBuilderFactory.html" title="class in org.apache.axiom.om"><code>OMXMLBuilderFactory</code></a> API.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/StAXOMBuilder.html#StAXOMBuilder(org.apache.axiom.om.OMFactory, javax.xml.stream.XMLStreamReader, org.apache.axiom.om.OMElement, java.lang.String)">StAXOMBuilder</a></strong>(<a href="../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;factory,
+             <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+             <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+             <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characterEncoding)</code>
+<div class="block">For internal use only.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/impl/builder/XOPAwareStAXOMBuilder.html#XOPAwareStAXOMBuilder(org.apache.axiom.om.OMFactory, javax.xml.stream.XMLStreamReader, org.apache.axiom.om.OMElement, org.apache.axiom.attachments.Attachments)">XOPAwareStAXOMBuilder</a></strong>(<a href="../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;factory,
+                     <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+                     <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+                     <a href="../../../../../org/apache/axiom/attachments/Attachments.html" title="class in org.apache.axiom.attachments">Attachments</a>&nbsp;attachments)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Please use the <a href="../../../../../org/apache/axiom/om/OMXMLBuilderFactory.html" title="class in org.apache.axiom.om"><code>OMXMLBuilderFactory</code></a> API.</i></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.axiom.om.impl.util">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/om/impl/util/package-summary.html">org.apache.axiom.om.impl.util</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/om/impl/util/package-summary.html">org.apache.axiom.om.impl.util</a> with parameters of type <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="strong">OMSerializerUtil.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/util/OMSerializerUtil.html#serializeAttributes(org.apache.axiom.om.OMElement, javax.xml.stream.XMLStreamWriter)">serializeAttributes</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+                   <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Consider using serializeStartpart instead</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="strong">OMSerializerUtil.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/util/OMSerializerUtil.html#serializeByPullStream(org.apache.axiom.om.OMElement, javax.xml.stream.XMLStreamWriter)">serializeByPullStream</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+                     <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>This is an internal method that is no longer used.</i></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="strong">OMSerializerUtil.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/util/OMSerializerUtil.html#serializeByPullStream(org.apache.axiom.om.OMElement, javax.xml.stream.XMLStreamWriter, boolean)">serializeByPullStream</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+                     <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer,
+                     boolean&nbsp;cache)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>This is an internal method that is no longer used.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="strong">OMSerializerUtil.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/util/OMSerializerUtil.html#serializeNamespaces(org.apache.axiom.om.OMElement, javax.xml.stream.XMLStreamWriter)">serializeNamespaces</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+                   <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Use serializeStartpart instead</i></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="strong">OMSerializerUtil.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/util/OMSerializerUtil.html#serializeNormal(org.apache.axiom.om.OMElement, javax.xml.stream.XMLStreamWriter, boolean)">serializeNormal</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+               <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer,
+               boolean&nbsp;cache)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>This is an internal method that is no longer used.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="strong">OMSerializerUtil.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/util/OMSerializerUtil.html#serializeStartpart(org.apache.axiom.om.OMElement, java.lang.String, javax.xml.stream.XMLStreamWriter)">serializeStartpart</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+                  <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName,
+                  <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>This is an internal method that is no longer used.</i></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="strong">OMSerializerUtil.</span><code><strong><a href="../../../../../org/apache/axiom/om/impl/util/OMSerializerUtil.html#serializeStartpart(org.apache.axiom.om.OMElement, javax.xml.stream.XMLStreamWriter)">serializeStartpart</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+                  <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>This is an internal method that is no longer used.</i></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.axiom.om.util">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/om/util/package-summary.html">org.apache.axiom.om.util</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/om/util/package-summary.html">org.apache.axiom.om.util</a> that return <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">ElementHelper.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/ElementHelper.html#getChildWithName(org.apache.axiom.om.OMElement, java.lang.String)">getChildWithName</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;parent,
+                <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;childName)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>please use OMElement.getFirstChildWithName(qname) instead!</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">ElementHelper.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/ElementHelper.html#importOMElement(org.apache.axiom.om.OMElement, org.apache.axiom.om.OMFactory)">importOMElement</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;omElement,
+               <a href="../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;omFactory)</code>
+<div class="block">Some times two OMElements needs to be added to the same object tree.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">AXIOMUtil.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/AXIOMUtil.html#stringToOM(org.apache.axiom.om.OMFactory, java.lang.String)">stringToOM</a></strong>(<a href="../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;omFactory,
+          <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;xmlFragment)</code>
+<div class="block">Create an OMElement from an XML fragment given as a string.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">AXIOMUtil.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/AXIOMUtil.html#stringToOM(java.lang.String)">stringToOM</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;xmlFragment)</code>
+<div class="block">Create an OMElement from an XML fragment given as a string.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/om/util/package-summary.html">org.apache.axiom.om.util</a> with parameters of type <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
+<td class="colLast"><span class="strong">DigestGenerator.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/DigestGenerator.html#getAttributesWithoutNS(org.apache.axiom.om.OMElement)">getAttributesWithoutNS</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element)</code>
+<div class="block">Gets the collection of attributes which are none namespace declarations for an OMElement</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">ElementHelper.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/ElementHelper.html#getChildWithName(org.apache.axiom.om.OMElement, java.lang.String)">getChildWithName</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;parent,
+                <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;childName)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>please use OMElement.getFirstChildWithName(qname) instead!</i></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>byte[]</code></td>
+<td class="colLast"><span class="strong">DigestGenerator.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/DigestGenerator.html#getDigest(org.apache.axiom.om.OMElement, java.lang.String)">getDigest</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+         <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;digestAlgorithm)</code>
+<div class="block">This method is an overloaded method for the digest generation for OMElement</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="strong">DigestGenerator.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/DigestGenerator.html#getExpandedName(org.apache.axiom.om.OMElement)">getExpandedName</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element)</code>
+<div class="block">This method is an overloaded method for getting the expanded name namespaceURI followed by
+ the local name for OMElement</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a></code></td>
+<td class="colLast"><span class="strong">ElementHelper.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/ElementHelper.html#getTextAsStream(org.apache.axiom.om.OMElement, boolean)">getTextAsStream</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+               boolean&nbsp;cache)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Use <a href="../../../../../org/apache/axiom/om/OMElement.html#getTextAsStream(boolean)"><code>getTextAsStream(boolean)</code></a> instead.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="strong">AttributeHelper.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/AttributeHelper.html#importOMAttribute(org.apache.axiom.om.OMAttribute, org.apache.axiom.om.OMElement)">importOMAttribute</a></strong>(<a href="../../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om">OMAttribute</a>&nbsp;omAttribute,
+                 <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;omElement)</code>
+<div class="block">In Axiom, a single tree should always contain objects created from the same type of factory
+ (eg: LinkedListImplFactory, DOMFactory, etc.,).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">ElementHelper.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/ElementHelper.html#importOMElement(org.apache.axiom.om.OMElement, org.apache.axiom.om.OMFactory)">importOMElement</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;omElement,
+               <a href="../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;omFactory)</code>
+<div class="block">Some times two OMElements needs to be added to the same object tree.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><span class="strong">CommonUtils.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/CommonUtils.html#logDebug(org.apache.axiom.om.OMElement, org.apache.commons.logging.Log)">logDebug</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;om,
+        org.apache.commons.logging.Log&nbsp;log)</code>
+<div class="block">Writes the om to a log.debug.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><span class="strong">CommonUtils.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/CommonUtils.html#logDebug(org.apache.axiom.om.OMElement, org.apache.commons.logging.Log, int)">logDebug</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;om,
+        org.apache.commons.logging.Log&nbsp;log,
+        int&nbsp;limit)</code>
+<div class="block">Writes the om to a log.debug.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><span class="strong">CommonUtils.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/CommonUtils.html#logDebug(org.apache.axiom.om.OMElement, org.apache.commons.logging.Log, int, org.apache.axiom.om.OMOutputFormat)">logDebug</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;om,
+        org.apache.commons.logging.Log&nbsp;log,
+        int&nbsp;limit,
+        <a href="../../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om">OMOutputFormat</a>&nbsp;format)</code>
+<div class="block">Writes the om to a log.debug.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="strong">ElementHelper.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/ElementHelper.html#setNewElement(org.apache.axiom.om.OMElement, org.apache.axiom.om.OMElement, org.apache.axiom.om.OMElement)">setNewElement</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;parent,
+             <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;myElement,
+             <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;newElement)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;&nbsp;</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/axiom/soap/SOAPHeaderBlock.html" title="interface in org.apache.axiom.soap">SOAPHeaderBlock</a></code></td>
+<td class="colLast"><span class="strong">ElementHelper.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/ElementHelper.html#toSOAPHeaderBlock(org.apache.axiom.om.OMElement, org.apache.axiom.soap.SOAPFactory)">toSOAPHeaderBlock</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;omElement,
+                 <a href="../../../../../org/apache/axiom/soap/SOAPFactory.html" title="interface in org.apache.axiom.soap">SOAPFactory</a>&nbsp;factory)</code>
+<div class="block">This is a method to convert regular OMElements to SOAPHeaderBlocks.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="strong">ElementHelper.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/ElementHelper.html#writeTextTo(org.apache.axiom.om.OMElement, java.io.Writer, boolean)">writeTextTo</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+           <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;out,
+           boolean&nbsp;cache)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Use <a href="../../../../../org/apache/axiom/om/OMElement.html#writeTextTo(java.io.Writer, boolean)"><code>writeTextTo(Writer, boolean)</code></a> instead.</i></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/axiom/om/util/package-summary.html">org.apache.axiom.om.util</a> with parameters of type <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/util/ElementHelper.html#ElementHelper(org.apache.axiom.om.OMElement)">ElementHelper</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element)</code>
+<div class="block">Constructs and binds to an element.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.axiom.om.util.jaxb">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/om/util/jaxb/package-summary.html">org.apache.axiom.om.util.jaxb</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/om/util/jaxb/package-summary.html">org.apache.axiom.om.util.jaxb</a> with parameters of type <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="strong">JAXBUtils.</span><code><strong><a href="../../../../../org/apache/axiom/om/util/jaxb/JAXBUtils.html#unmarshal(javax.xml.bind.JAXBContext, org.apache.axiom.om.OMElement, boolean)">unmarshal</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/bind/JAXBContext.html?is-external=true" title="class or interface in javax.xml.bind">JAXBContext</a>&nbsp;context,
+         <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+         boolean&nbsp;cache)</code>
+<div class="block">Unmarshal the given element.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.axiom.om.xpath">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/om/xpath/package-summary.html">org.apache.axiom.om.xpath</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/om/xpath/package-summary.html">org.apache.axiom.om.xpath</a> with parameters of type <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">AXIOMXPath.</span><code><strong><a href="../../../../../org/apache/axiom/om/xpath/AXIOMXPath.html#addNamespaces(org.apache.axiom.om.OMElement)">addNamespaces</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element)</code>
+<div class="block">Add the namespace declarations of a given <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om"><code>OMElement</code></a> to the namespace
+ context of an XPath expression.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/axiom/om/xpath/package-summary.html">org.apache.axiom.om.xpath</a> with parameters of type <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/xpath/AXIOMXPath.html#AXIOMXPath(org.apache.axiom.om.OMElement, java.lang.String)">AXIOMXPath</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+          <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;xpathExpr)</code>
+<div class="block">Construct an XPath expression from a given string and initialize its
+ namespace context based on a given element.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.axiom.soap">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/soap/package-summary.html">org.apache.axiom.soap</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subinterfaces, and an explanation">
+<caption><span>Subinterfaces of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/soap/package-summary.html">org.apache.axiom.soap</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Interface and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPBody.html" title="interface in org.apache.axiom.soap">SOAPBody</a></strong></code>
+<div class="block">An object that represents the contents of the SOAP body element in a SOAP message.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPEnvelope.html" title="interface in org.apache.axiom.soap">SOAPEnvelope</a></strong></code>
+<div class="block">Interface SOAPEnvelope</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPFault.html" title="interface in org.apache.axiom.soap">SOAPFault</a></strong></code>
+<div class="block">An element in the <CODE>SOAPBody</CODE> object that contains error and/or status information.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPFaultClassifier.html" title="interface in org.apache.axiom.soap">SOAPFaultClassifier</a></strong></code>
+<div class="block">Common superinterface for <a href="../../../../../org/apache/axiom/soap/SOAPFaultCode.html" title="interface in org.apache.axiom.soap"><code>SOAPFaultCode</code></a> and <a href="../../../../../org/apache/axiom/soap/SOAPFaultSubCode.html" title="interface in org.apache.axiom.soap"><code>SOAPFaultSubCode</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPFaultCode.html" title="interface in org.apache.axiom.soap">SOAPFaultCode</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPFaultDetail.html" title="interface in org.apache.axiom.soap">SOAPFaultDetail</a></strong></code>
+<div class="block">The Detail element information item is intended for carrying application specific error
+ information related to the SOAP Body .</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPFaultNode.html" title="interface in org.apache.axiom.soap">SOAPFaultNode</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPFaultReason.html" title="interface in org.apache.axiom.soap">SOAPFaultReason</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPFaultRole.html" title="interface in org.apache.axiom.soap">SOAPFaultRole</a></strong></code>
+<div class="block">The Role element information item identifies the role the node was operating in at the point the
+ fault occurred.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPFaultSubCode.html" title="interface in org.apache.axiom.soap">SOAPFaultSubCode</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPFaultText.html" title="interface in org.apache.axiom.soap">SOAPFaultText</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPFaultValue.html" title="interface in org.apache.axiom.soap">SOAPFaultValue</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPHeader.html" title="interface in org.apache.axiom.soap">SOAPHeader</a></strong></code>
+<div class="block">Interface SOAPHeader</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPHeaderBlock.html" title="interface in org.apache.axiom.soap">SOAPHeaderBlock</a></strong></code>
+<div class="block">An object representing the contents in the SOAP header part of the SOAP envelope.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/soap/package-summary.html">org.apache.axiom.soap</a> with parameters of type <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">SOAPFaultDetail.</span><code><strong><a href="../../../../../org/apache/axiom/soap/SOAPFaultDetail.html#addDetailEntry(org.apache.axiom.om.OMElement)">addDetailEntry</a></strong>(<a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;detailElement)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.axiom.soap.impl.builder">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a> in <a href="../../../../../org/apache/axiom/soap/impl/builder/package-summary.html">org.apache.axiom.soap.impl.builder</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/soap/impl/builder/package-summary.html">org.apache.axiom.soap.impl.builder</a> that return <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">StAXSOAPModelBuilder.</span><code><strong><a href="../../../../../org/apache/axiom/soap/impl/builder/StAXSOAPModelBuilder.html#constructNode(org.apache.axiom.om.OMContainer, java.lang.String)">constructNode</a></strong>(<a href="../../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>&nbsp;parent,
+             <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;elementName)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">SOAPBuilderHelper.</span><code><strong><a href="../../../../../org/apache/axiom/soap/impl/builder/SOAPBuilderHelper.html#handleEvent(javax.xml.stream.XMLStreamReader, org.apache.axiom.om.OMElement, int)">handleEvent</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+           <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+           int&nbsp;elementLevel)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">SOAP12BuilderHelper.</span><code><strong><a href="../../../../../org/apache/axiom/soap/impl/builder/SOAP12BuilderHelper.html#handleEvent(javax.xml.stream.XMLStreamReader, org.apache.axiom.om.OMElement, int)">handleEvent</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+           <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;parent,
+           int&nbsp;elementLevel)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">SOAP11BuilderHelper.</span><code><strong><a href="../../../../../org/apache/axiom/soap/impl/builder/SOAP11BuilderHelper.html#handleEvent(javax.xml.stream.XMLStreamReader, org.apache.axiom.om.OMElement, int)">handleEvent</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+           <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;parent,
+           int&nbsp;elementLevel)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/axiom/soap/impl/builder/package-summary.html">org.apache.axiom.soap.impl.builder</a> with parameters of type <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">SOAPBuilderHelper.</span><code><strong><a href="../../../../../org/apache/axiom/soap/impl/builder/SOAPBuilderHelper.html#handleEvent(javax.xml.stream.XMLStreamReader, org.apache.axiom.om.OMElement, int)">handleEvent</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+           <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element,
+           int&nbsp;elementLevel)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">SOAP12BuilderHelper.</span><code><strong><a href="../../../../../org/apache/axiom/soap/impl/builder/SOAP12BuilderHelper.html#handleEvent(javax.xml.stream.XMLStreamReader, org.apache.axiom.om.OMElement, int)">handleEvent</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+           <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;parent,
+           int&nbsp;elementLevel)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><span class="strong">SOAP11BuilderHelper.</span><code><strong><a href="../../../../../org/apache/axiom/soap/impl/builder/SOAP11BuilderHelper.html#handleEvent(javax.xml.stream.XMLStreamReader, org.apache.axiom.om.OMElement, int)">handleEvent</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+           <a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;parent,
+           int&nbsp;elementLevel)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/axiom/om/class-use/OMElement.html" target="_top">Frames</a></li>
+<li><a href="OMElement.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &copy; <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

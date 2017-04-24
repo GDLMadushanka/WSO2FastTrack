@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>WritableBlob (Apache Axiom)</title>
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="WritableBlob (Apache Axiom)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/WritableBlob.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../org/apache/axiom/blob/OverflowableBlob.html" title="interface in org.apache.axiom.blob"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../org/apache/axiom/blob/WritableBlobFactory.html" title="interface in org.apache.axiom.blob"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?org/apache/axiom/blob/WritableBlob.html" target="_top">Frames</a></li>
+<li><a href="WritableBlob.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.axiom.blob</div>
+<h2 title="Interface WritableBlob" class="title">Interface WritableBlob</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Superinterfaces:</dt>
+<dd><a href="../../../../org/apache/axiom/blob/Blob.html" title="interface in org.apache.axiom.blob">Blob</a></dd>
+</dl>
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><a href="../../../../org/apache/axiom/blob/MemoryBlob.html" title="interface in org.apache.axiom.blob">MemoryBlob</a>, <a href="../../../../org/apache/axiom/blob/OverflowableBlob.html" title="interface in org.apache.axiom.blob">OverflowableBlob</a></dd>
+</dl>
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><a href="../../../../org/apache/axiom/blob/AbstractWritableBlob.html" title="class in org.apache.axiom.blob">AbstractWritableBlob</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public interface <span class="strong">WritableBlob</span>
+extends <a href="../../../../org/apache/axiom/blob/Blob.html" title="interface in org.apache.axiom.blob">Blob</a></pre>
+<div class="block">A writable blob.
+ <p>
+ The behavior of the methods defined by this interface is described in terms of four logical
+ states the blob can be in:
+ <dl>
+   <dt>NEW
+   <dd>The blob has just been created and no data has been written to it yet.
+   <dt>UNCOMMITTED
+   <dd>Data is being written to the blob.
+   <dt>COMMITTED
+   <dd>All data has been written to the blob and the blob will no longer accept any new data.
+   <dt>RELEASED
+   <dd>The blob has been released, i.e. its data has been discarded.
+ </dl>
+ Reading data from a blob in state NEW or UNCOMMITTED is not supported: methods defined by the
+ <a href="../../../../org/apache/axiom/blob/Blob.html" title="interface in org.apache.axiom.blob"><code>Blob</code></a> interface will throw <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang"><code>IllegalStateException</code></a> if the blob is not in state
+ COMMITTED.
+ <p>
+ <a href="../../../../org/apache/axiom/blob/WritableBlob.html" title="interface in org.apache.axiom.blob"><code>WritableBlob</code></a> instances are generally not thread safe. However, for a blob in state
+ COMMITTED, all methods defined by the <a href="../../../../org/apache/axiom/blob/Blob.html" title="interface in org.apache.axiom.blob"><code>Blob</code></a> interface are thread safe.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/blob/WritableBlob.html#getOutputStream()">getOutputStream</a></strong>()</code>
+<div class="block">Create an output stream to write data to the blob.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/blob/WritableBlob.html#readFrom(java.io.InputStream)">readFrom</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;in)</code>
+<div class="block">Read data from the given input stream and write it to the blob.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/blob/WritableBlob.html#release()">release</a></strong>()</code>
+<div class="block">Release all resources held by this blob.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.axiom.blob.Blob">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.apache.axiom.blob.<a href="../../../../org/apache/axiom/blob/Blob.html" title="interface in org.apache.axiom.blob">Blob</a></h3>
+<code><a href="../../../../org/apache/axiom/blob/Blob.html#getInputStream()">getInputStream</a>, <a href="../../../../org/apache/axiom/blob/Blob.html#getSize()">getSize</a>, <a href="../../../../org/apache/axiom/blob/Blob.html#writeTo(java.io.OutputStream)">writeTo</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getOutputStream()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOutputStream</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;getOutputStream()
+                             throws <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Create an output stream to write data to the blob. The blob must be in state NEW when this
+ method is called. It will be in state UNCOMMITTED after this method completes successfully.
+ Note that this implies that this method may be called at most once for a given blob instance.
+ <p>
+ Calls to methods of the returned output stream will modify the state of the blob
+ according to the following rules:
+ <ul>
+   <li>A call to <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true#close()" title="class or interface in java.io"><code>OutputStream.close()</code></a> will change the state to COMMITTED.
+   <li>Calls to other methods will not modify the state of the blob. They will result in
+       an <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io"><code>IOException</code></a> if the state is COMMITTED, i.e. if the stream has already been
+       closed.
+ </ul>
+ <p>
+ The returned stream may implement <a href="../../../../org/apache/axiom/ext/io/ReadFromSupport.html" title="interface in org.apache.axiom.ext.io"><code>ReadFromSupport</code></a>, especially if the blob stores its
+ data in memory (in which case <a href="../../../../org/apache/axiom/ext/io/ReadFromSupport.html#readFrom(java.io.InputStream, long)"><code>ReadFromSupport.readFrom(InputStream, long)</code></a> would read
+ data directly into the buffers managed by the blob).</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>an output stream that can be used to write data to the blob</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the blob is not in state NEW</dd>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurred</dd></dl>
+</li>
+</ul>
+<a name="readFrom(java.io.InputStream)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readFrom</h4>
+<pre>long&nbsp;readFrom(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;in)
+              throws <a href="../../../../org/apache/axiom/ext/io/StreamCopyException.html" title="class in org.apache.axiom.ext.io">StreamCopyException</a></pre>
+<div class="block">Read data from the given input stream and write it to the blob.
+ <p>
+ A call to this method has the same effect as requesting an output stream using
+ <a href="../../../../org/apache/axiom/blob/WritableBlob.html#getOutputStream()"><code>getOutputStream()</code></a> and copying the data from the input stream to that
+ output stream, but the implementation may achieve this result in a more efficient way.
+ <p>
+ The blob must be in state NEW when this method is called. It will be in state UNCOMMITTED
+ after this method completes successfully.
+ <p>
+ The method transfers data from the input stream to the blob until the end of the input
+ stream is reached.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>in</code> - An input stream to read data from. This method will not
+           close the stream.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of bytes transferred</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../org/apache/axiom/ext/io/StreamCopyException.html" title="class in org.apache.axiom.ext.io">StreamCopyException</a></code></dd>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the blob is not in state NEW</dd></dl>
+</li>
+</ul>
+<a name="release()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>release</h4>
+<pre>void&nbsp;release()
+             throws <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Release all resources held by this blob. This method will put the blob into the RELEASED
+ state and the content will no longer be accessible.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if the cleanup could not be completed because an I/O error occurred</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/WritableBlob.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../org/apache/axiom/blob/OverflowableBlob.html" title="interface in org.apache.axiom.blob"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../org/apache/axiom/blob/WritableBlobFactory.html" title="interface in org.apache.axiom.blob"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?org/apache/axiom/blob/WritableBlob.html" target="_top">Frames</a></li>
+<li><a href="WritableBlob.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &copy; <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

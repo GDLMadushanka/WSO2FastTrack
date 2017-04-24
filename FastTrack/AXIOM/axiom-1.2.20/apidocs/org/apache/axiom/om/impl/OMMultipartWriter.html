@@ -1,0 +1,411 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>OMMultipartWriter (Apache Axiom)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="OMMultipartWriter (Apache Axiom)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/OMMultipartWriter.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/axiom/om/impl/OMElementEx.html" title="interface in org.apache.axiom.om.impl"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/axiom/om/impl/OMNodeEx.html" title="interface in org.apache.axiom.om.impl"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/axiom/om/impl/OMMultipartWriter.html" target="_top">Frames</a></li>
+<li><a href="OMMultipartWriter.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.axiom.om.impl</div>
+<h2 title="Class OMMultipartWriter" class="title">Class OMMultipartWriter</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.axiom.om.impl.OMMultipartWriter</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">OMMultipartWriter</span>
+extends <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">Writes a MIME multipart package as used by XOP/MTOM and SOAP with Attachments. This class wraps a
+ <a href="../../../../../org/apache/axiom/mime/MultipartWriter.html" title="interface in org.apache.axiom.mime"><code>MultipartWriter</code></a>, providing a higher level API. In particular it will configure content
+ types and content transfer encodings based on information from an <a href="../../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om"><code>OMOutputFormat</code></a> object.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/axiom/om/impl/OMMultipartWriter.html#OMMultipartWriter(java.io.OutputStream, org.apache.axiom.om.OMOutputFormat)">OMMultipartWriter</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;out,
+                 <a href="../../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om">OMOutputFormat</a>&nbsp;format)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/impl/OMMultipartWriter.html#complete()">complete</a></strong>()</code>
+<div class="block">Complete writing of the MIME multipart package.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/impl/OMMultipartWriter.html#getRootPartContentType()">getRootPartContentType</a></strong>()</code>
+<div class="block">Get the content type of the root part, as determined by the <a href="../../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om"><code>OMOutputFormat</code></a> passed
+ to the constructor of this object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/impl/OMMultipartWriter.html#writePart(javax.activation.DataHandler, java.lang.String)">writePart</a></strong>(<a href="http://download.oracle.com/javaee/1.4/api/javax/activation/DataHandler.html?is-external=true" title="class or interface in javax.activation">DataHandler</a>&nbsp;dataHandler,
+         <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentID)</code>
+<div class="block">Write a MIME part.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/impl/OMMultipartWriter.html#writePart(javax.activation.DataHandler, java.lang.String, java.util.List)">writePart</a></strong>(<a href="http://download.oracle.com/javaee/1.4/api/javax/activation/DataHandler.html?is-external=true" title="class or interface in javax.activation">DataHandler</a>&nbsp;dataHandler,
+         <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentID,
+         <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;extraHeaders)</code>
+<div class="block">Write a MIME part.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/impl/OMMultipartWriter.html#writePart(java.lang.String, java.lang.String)">writePart</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
+         <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentID)</code>
+<div class="block">Start writing an attachment part of the MIME package.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/impl/OMMultipartWriter.html#writePart(java.lang.String, java.lang.String, java.util.List)">writePart</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
+         <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentID,
+         <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;extraHeaders)</code>
+<div class="block">Start writing an attachment part of the MIME package.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/axiom/om/impl/OMMultipartWriter.html#writeRootPart()">writeRootPart</a></strong>()</code>
+<div class="block">Start writing the root part of the MIME package.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="OMMultipartWriter(java.io.OutputStream, org.apache.axiom.om.OMOutputFormat)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>OMMultipartWriter</h4>
+<pre>public&nbsp;OMMultipartWriter(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;out,
+                 <a href="../../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om">OMOutputFormat</a>&nbsp;format)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getRootPartContentType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRootPartContentType</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getRootPartContentType()</pre>
+<div class="block">Get the content type of the root part, as determined by the <a href="../../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om"><code>OMOutputFormat</code></a> passed
+ to the constructor of this object.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the content type of the root part</dd></dl>
+</li>
+</ul>
+<a name="writeRootPart()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeRootPart</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;writeRootPart()
+                           throws <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Start writing the root part of the MIME package. This method delegates to
+ <a href="../../../../../org/apache/axiom/mime/MultipartWriter.html#writePart(java.lang.String, java.lang.String, java.lang.String)"><code>MultipartWriter.writePart(String, String, String)</code></a>, but computes the content type,
+ content transfer encoding and content ID from the <a href="../../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om"><code>OMOutputFormat</code></a>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>an output stream to write the content of the MIME part</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs when writing to the underlying stream</dd></dl>
+</li>
+</ul>
+<a name="writePart(java.lang.String, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writePart</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;writePart(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
+                     <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentID)
+                       throws <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Start writing an attachment part of the MIME package. This method delegates to
+ <a href="../../../../../org/apache/axiom/mime/MultipartWriter.html#writePart(java.lang.String, java.lang.String, java.lang.String)"><code>MultipartWriter.writePart(String, String, String)</code></a>, but computes the content transfer
+ encoding based on the content type and the <a href="../../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om"><code>OMOutputFormat</code></a>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>contentType</code> - the content type of the MIME part to write</dd><dd><code>contentID</code> - the content ID of the MIME part</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an output stream to write the content of the MIME part</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs when writing to the underlying stream</dd></dl>
+</li>
+</ul>
+<a name="writePart(java.lang.String, java.lang.String, java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writePart</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;writePart(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
+                     <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentID,
+                     <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;extraHeaders)
+                       throws <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Start writing an attachment part of the MIME package. This method delegates to
+ <a href="../../../../../org/apache/axiom/mime/MultipartWriter.html#writePart(java.lang.String, java.lang.String, java.lang.String, java.util.List)"><code>MultipartWriter.writePart(String, String, String, List)</code></a>, but computes the content
+ transfer encoding based on the content type and the <a href="../../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om"><code>OMOutputFormat</code></a>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>contentType</code> - the content type of the MIME part to write</dd><dd><code>contentID</code> - the content ID of the MIME part</dd><dd><code>extraHeaders</code> - a list of <a href="../../../../../org/apache/axiom/mime/Header.html" title="class in org.apache.axiom.mime"><code>Header</code></a> objects with additional headers to write to the MIME part</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an output stream to write the content of the MIME part</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs when writing to the underlying stream</dd></dl>
+</li>
+</ul>
+<a name="writePart(javax.activation.DataHandler, java.lang.String, java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writePart</h4>
+<pre>public&nbsp;void&nbsp;writePart(<a href="http://download.oracle.com/javaee/1.4/api/javax/activation/DataHandler.html?is-external=true" title="class or interface in javax.activation">DataHandler</a>&nbsp;dataHandler,
+             <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentID,
+             <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;extraHeaders)
+               throws <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Write a MIME part. This method delegates to
+ <a href="../../../../../org/apache/axiom/mime/MultipartWriter.html#writePart(javax.activation.DataHandler, java.lang.String, java.lang.String, java.util.List)"><code>MultipartWriter.writePart(DataHandler, String, String, List)</code></a>, but computes the
+ appropriate content transfer encoding from the <a href="../../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om"><code>OMOutputFormat</code></a>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>dataHandler</code> - the content of the MIME part to write</dd><dd><code>contentID</code> - the content ID of the MIME part</dd><dd><code>extraHeaders</code> - a list of <a href="../../../../../org/apache/axiom/mime/Header.html" title="class in org.apache.axiom.mime"><code>Header</code></a> objects with additional headers to write to the MIME part</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs when writing the part to the underlying stream</dd></dl>
+</li>
+</ul>
+<a name="writePart(javax.activation.DataHandler, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writePart</h4>
+<pre>public&nbsp;void&nbsp;writePart(<a href="http://download.oracle.com/javaee/1.4/api/javax/activation/DataHandler.html?is-external=true" title="class or interface in javax.activation">DataHandler</a>&nbsp;dataHandler,
+             <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentID)
+               throws <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Write a MIME part. This method delegates to
+ <a href="../../../../../org/apache/axiom/mime/MultipartWriter.html#writePart(javax.activation.DataHandler, java.lang.String, java.lang.String)"><code>MultipartWriter.writePart(DataHandler, String, String)</code></a>, but computes the appropriate
+ content transfer encoding from the <a href="../../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om"><code>OMOutputFormat</code></a>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>dataHandler</code> - the content of the MIME part to write</dd><dd><code>contentID</code> - the content ID of the MIME part</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs when writing the part to the underlying stream</dd></dl>
+</li>
+</ul>
+<a name="complete()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>complete</h4>
+<pre>public&nbsp;void&nbsp;complete()
+              throws <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Complete writing of the MIME multipart package. This method delegates to
+ <a href="../../../../../org/apache/axiom/mime/MultipartWriter.html#complete()"><code>MultipartWriter.complete()</code></a>.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs when writing to the underlying stream</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/OMMultipartWriter.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/axiom/om/impl/OMElementEx.html" title="interface in org.apache.axiom.om.impl"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/axiom/om/impl/OMNodeEx.html" title="interface in org.apache.axiom.om.impl"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/axiom/om/impl/OMMultipartWriter.html" target="_top">Frames</a></li>
+<li><a href="OMMultipartWriter.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &copy; <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

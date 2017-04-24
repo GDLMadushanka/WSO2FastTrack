@@ -1,0 +1,1520 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>StAXBuilder (Apache Axiom)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="StAXBuilder (Apache Axiom)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/StAXBuilder.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/apache/axiom/om/impl/builder/OMFactoryEx.html" title="interface in org.apache.axiom.om.impl.builder"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXOMBuilder.html" title="class in org.apache.axiom.om.impl.builder"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/axiom/om/impl/builder/StAXBuilder.html" target="_top">Frames</a></li>
+<li><a href="StAXBuilder.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.axiom.om.impl.builder</div>
+<h2 title="Class StAXBuilder" class="title">Class StAXBuilder</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.axiom.om.impl.builder.StAXBuilder</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilderSupport.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilderSupport</a>, <a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXOMBuilder.html" title="class in org.apache.axiom.om.impl.builder">StAXOMBuilder</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public abstract class <span class="strong">StAXBuilder</span>
+extends <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a>, <a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilderSupport.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilderSupport</a></pre>
+<div class="block">Internal implementation class.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#_isClosed">_isClosed</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#cache">cache</a></strong></code>
+<div class="block">Field cache</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#charEncoding">charEncoding</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#customBuilderForPayload">customBuilderForPayload</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>,<a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#customBuilders">customBuilders</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler">DataHandlerReader</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#dataHandlerReader">dataHandlerReader</a></strong></code>
+<div class="block">Reference to the <a href="../../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler"><code>DataHandlerReader</code></a> extension of the parser, or <code>null</code> if
+ the parser doesn't support this extension.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/axiom/om/OMDocument.html" title="interface in org.apache.axiom.om">OMDocument</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#document">document</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#done">done</a></strong></code>
+<div class="block">Field done</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#elementLevel">elementLevel</a></strong></code>
+<div class="block">Tracks the depth of the node identified by <a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#target"><code>target</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#maxDepthForCustomBuilders">maxDepthForCustomBuilders</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/axiom/om/impl/builder/OMFactoryEx.html" title="interface in org.apache.axiom.om.impl.builder">OMFactoryEx</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#omfactory">omfactory</a></strong></code>
+<div class="block">Field omfactory</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#parser">parser</a></strong></code>
+<div class="block">Field parser</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#parserAccessed">parserAccessed</a></strong></code>
+<div class="block">Field parserAccessed</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#parserException">parserException</a></strong></code>
+<div class="block">Stores exceptions thrown by the parser.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/axiom/om/impl/OMContainerEx.html" title="interface in org.apache.axiom.om.impl">OMContainerEx</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#target">target</a></strong></code>
+<div class="block">Field lastNode</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#StAXBuilder()">StAXBuilder</a></strong>()</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;&nbsp;</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#StAXBuilder(org.apache.axiom.om.OMFactory, javax.xml.stream.XMLStreamReader)">StAXBuilder</a></strong>(<a href="../../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;omFactory,
+           <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;&nbsp;</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#StAXBuilder(org.apache.axiom.om.OMFactory, javax.xml.stream.XMLStreamReader, org.apache.axiom.om.impl.builder.Detachable, java.io.Closeable)">StAXBuilder</a></strong>(<a href="../../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;omFactory,
+           <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+           <a href="../../../../../../org/apache/axiom/om/impl/builder/Detachable.html" title="interface in org.apache.axiom.om.impl.builder">Detachable</a>&nbsp;detachable,
+           <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a>&nbsp;closeable)</code>
+<div class="block">For internal use only.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#StAXBuilder(org.apache.axiom.om.OMFactory, javax.xml.stream.XMLStreamReader, java.lang.String)">StAXBuilder</a></strong>(<a href="../../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;omFactory,
+           <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+           <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;encoding)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;&nbsp;</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#StAXBuilder(org.apache.axiom.om.OMFactory, javax.xml.stream.XMLStreamReader, java.lang.String, org.apache.axiom.om.impl.builder.Detachable, java.io.Closeable)">StAXBuilder</a></strong>(<a href="../../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;omFactory,
+           <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+           <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;encoding,
+           <a href="../../../../../../org/apache/axiom/om/impl/builder/Detachable.html" title="interface in org.apache.axiom.om.impl.builder">Detachable</a>&nbsp;detachable,
+           <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a>&nbsp;closeable)</code>
+<div class="block">For internal use only.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#StAXBuilder(javax.xml.stream.XMLStreamReader)">StAXBuilder</a></strong>(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;&nbsp;</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#close()">close</a></strong>()</code>
+<div class="block">Close this builder.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract <a href="../../../../../../org/apache/axiom/om/OMDocument.html" title="interface in org.apache.axiom.om">OMDocument</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#createDocument()">createDocument</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#createDocumentIfNecessary()">createDocumentIfNecessary</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract <a href="../../../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#createOMElement()">createOMElement</a></strong>()</code>
+<div class="block">This method is called with the XMLStreamConstants.START_ELEMENT event.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#createOMText(int)">createOMText</a></strong>(int&nbsp;textType)</code>
+<div class="block">This method will check whether the text can be optimizable using IS_BINARY flag.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#debugDiscarded(java.lang.Object)">debugDiscarded</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;container)</code>
+<div class="block">For internal use only.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#detach()">detach</a></strong>()</code>
+<div class="block">Detach this builder from its underlying source, so that the state of the source object can be
+ changed without impact on the object model produced by this builder.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#disableCaching()">disableCaching</a></strong>()</code>
+<div class="block">For internal use only.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#discard(org.apache.axiom.om.OMContainer)">discard</a></strong>(<a href="../../../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>&nbsp;container)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#discard(org.apache.axiom.om.OMElement)">discard</a></strong>(<a href="../../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getAttributeCount()">getAttributeCount</a></strong>()</code>
+<div class="block">Method getAttributeCount.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getAttributeName(int)">getAttributeName</a></strong>(int&nbsp;arg)</code>
+<div class="block">Method getAttributeName.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getAttributeNamespace(int)">getAttributeNamespace</a></strong>(int&nbsp;arg)</code>
+<div class="block">Method getAttributeNamespace.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getAttributePrefix(int)">getAttributePrefix</a></strong>(int&nbsp;arg)</code>
+<div class="block">Method getAttributePrefix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>short</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getBuilderType()">getBuilderType</a></strong>()</code>
+<div class="block">Returns the type of the builder.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getCharacterEncoding()">getCharacterEncoding</a></strong>()</code>
+<div class="block">Returns the encoding style of the XML data</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getCharsetEncoding()">getCharsetEncoding</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getCustomBuilder(java.lang.String, java.lang.String)">getCustomBuilder</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;namespace,
+                <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localPart)</code>
+<div class="block">Return CustomBuilder associated with the namespace/localPart</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/axiom/om/OMDocument.html" title="interface in org.apache.axiom.om">OMDocument</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getDocument()">getDocument</a></strong>()</code>
+<div class="block">Get the document being built by this builder.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getName()">getName</a></strong>()</code>
+<div class="block">Method getName.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getNamespace()">getNamespace</a></strong>()</code>
+<div class="block">Method getNamespace.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getNamespaceCount()">getNamespaceCount</a></strong>()</code>
+<div class="block">Method getNamespaceCount.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getNamespacePrefix(int)">getNamespacePrefix</a></strong>(int&nbsp;index)</code>
+<div class="block">Method getNamespacePrefix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getNamespaceUri(int)">getNamespaceUri</a></strong>(int&nbsp;index)</code>
+<div class="block">Method getNamespaceUri.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getParser()">getParser</a></strong>()</code>
+<div class="block">Get the underlying <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> used by this builder.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getPrefix()">getPrefix</a></strong>()</code>
+<div class="block">Method getPrefix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getReaderProperty(java.lang.String)">getReaderProperty</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<div class="block">Get the value of a feature/property from the underlying XMLStreamReader implementation
+ without accessing the XMLStreamReader. https://issues.apache.org/jira/browse/AXIOM-348</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getRegisteredContentHandler()">getRegisteredContentHandler</a></strong>()</code>
+<div class="block">Method getRegisteredContentHandler.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#getText()">getText</a></strong>()</code>
+<div class="block">Method getText.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#init(java.io.InputStream, java.lang.String, java.lang.String, java.lang.String)">init</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;inputStream,
+    <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;charSetEncoding,
+    <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;url,
+    <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Not used anywhere</i></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#isCache()">isCache</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#isClosed()">isClosed</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#isCompleted()">isCompleted</a></strong>()</code>
+<div class="block">Method isCompleted.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#next()">next</a></strong>()</code>
+<div class="block">Forwards the parser one step further, if parser is not completed yet.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#processAttributes(org.apache.axiom.om.OMElement)">processAttributes</a></strong>(<a href="../../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;node)</code>
+<div class="block">Method processAttributes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#processNamespaceData(org.apache.axiom.om.OMElement)">processNamespaceData</a></strong>(<a href="../../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;node)</code>
+<div class="block">Method processNamespaceData.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#reenableCaching(org.apache.axiom.om.OMContainer)">reenableCaching</a></strong>(<a href="../../../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>&nbsp;container)</code>
+<div class="block">For internal use only.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#registerCustomBuilder(javax.xml.namespace.QName, int, org.apache.axiom.om.impl.builder.CustomBuilder)">registerCustomBuilder</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qName,
+                     int&nbsp;maxDepth,
+                     <a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a>&nbsp;customBuilder)</code>
+<div class="block">Register a CustomBuilder associated with the indicated QName.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#registerCustomBuilderForPayload(org.apache.axiom.om.impl.builder.CustomBuilder)">registerCustomBuilderForPayload</a></strong>(<a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a>&nbsp;customBuilder)</code>
+<div class="block">Register a CustomBuilder for a payload.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#registerExternalContentHandler(java.lang.Object)">registerExternalContentHandler</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>
+<div class="block">Method registerExternalContentHandler.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#releaseParserOnClose(boolean)">releaseParserOnClose</a></strong>(boolean&nbsp;value)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>As of Axiom 1.2.15, the builder always releases the parser.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#setAutoClose(boolean)">setAutoClose</a></strong>(boolean&nbsp;autoClose)</code>
+<div class="block">For internal use only.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#setCache(boolean)">setCache</a></strong>(boolean&nbsp;b)</code>
+<div class="block">Method setCache.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#setOMBuilderFactory(org.apache.axiom.om.OMFactory)">setOMBuilderFactory</a></strong>(<a href="../../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;ombuilderFactory)</code>
+<div class="block">Method setOMBuilderFactory.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.axiom.om.OMXMLParserWrapper">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.apache.axiom.om.<a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></h3>
+<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#getDocumentElement()">getDocumentElement</a>, <a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#getDocumentElement(boolean)">getDocumentElement</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="parser">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parser</h4>
+<pre>protected&nbsp;<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a> parser</pre>
+<div class="block">Field parser</div>
+</li>
+</ul>
+<a name="omfactory">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>omfactory</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/axiom/om/impl/builder/OMFactoryEx.html" title="interface in org.apache.axiom.om.impl.builder">OMFactoryEx</a> omfactory</pre>
+<div class="block">Field omfactory</div>
+</li>
+</ul>
+<a name="target">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>target</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/axiom/om/impl/OMContainerEx.html" title="interface in org.apache.axiom.om.impl">OMContainerEx</a> target</pre>
+<div class="block">Field lastNode</div>
+</li>
+</ul>
+<a name="done">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>done</h4>
+<pre>protected&nbsp;boolean done</pre>
+<div class="block">Field done</div>
+</li>
+</ul>
+<a name="cache">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cache</h4>
+<pre>protected&nbsp;boolean cache</pre>
+<div class="block">Field cache</div>
+</li>
+</ul>
+<a name="parserAccessed">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parserAccessed</h4>
+<pre>protected&nbsp;boolean parserAccessed</pre>
+<div class="block">Field parserAccessed</div>
+</li>
+</ul>
+<a name="document">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>document</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/axiom/om/OMDocument.html" title="interface in org.apache.axiom.om">OMDocument</a> document</pre>
+</li>
+</ul>
+<a name="charEncoding">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>charEncoding</h4>
+<pre>protected&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> charEncoding</pre>
+</li>
+</ul>
+<a name="_isClosed">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>_isClosed</h4>
+<pre>protected&nbsp;boolean _isClosed</pre>
+</li>
+</ul>
+<a name="customBuilderForPayload">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>customBuilderForPayload</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a> customBuilderForPayload</pre>
+</li>
+</ul>
+<a name="customBuilders">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>customBuilders</h4>
+<pre>protected&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>,<a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a>&gt; customBuilders</pre>
+</li>
+</ul>
+<a name="maxDepthForCustomBuilders">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>maxDepthForCustomBuilders</h4>
+<pre>protected&nbsp;int maxDepthForCustomBuilders</pre>
+</li>
+</ul>
+<a name="dataHandlerReader">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dataHandlerReader</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler">DataHandlerReader</a> dataHandlerReader</pre>
+<div class="block">Reference to the <a href="../../../../../../org/apache/axiom/ext/stax/datahandler/DataHandlerReader.html" title="interface in org.apache.axiom.ext.stax.datahandler"><code>DataHandlerReader</code></a> extension of the parser, or <code>null</code> if
+ the parser doesn't support this extension.</div>
+</li>
+</ul>
+<a name="elementLevel">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>elementLevel</h4>
+<pre>protected&nbsp;int elementLevel</pre>
+<div class="block">Tracks the depth of the node identified by <a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#target"><code>target</code></a>. By definition, the level of the
+ root element is defined as 1. Note that if caching is disabled, then this depth may be
+ different from the actual depth reached by the underlying parser.</div>
+</li>
+</ul>
+<a name="parserException">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>parserException</h4>
+<pre>protected&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a> parserException</pre>
+<div class="block">Stores exceptions thrown by the parser. Used to avoid accessing the parser
+ again after is has thrown a parse exception.</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="StAXBuilder(org.apache.axiom.om.OMFactory, javax.xml.stream.XMLStreamReader, java.lang.String, org.apache.axiom.om.impl.builder.Detachable, java.io.Closeable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>StAXBuilder</h4>
+<pre>protected&nbsp;StAXBuilder(<a href="../../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;omFactory,
+           <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+           <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;encoding,
+           <a href="../../../../../../org/apache/axiom/om/impl/builder/Detachable.html" title="interface in org.apache.axiom.om.impl.builder">Detachable</a>&nbsp;detachable,
+           <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a>&nbsp;closeable)</pre>
+<div class="block">For internal use only.</div>
+</li>
+</ul>
+<a name="StAXBuilder(org.apache.axiom.om.OMFactory, javax.xml.stream.XMLStreamReader, org.apache.axiom.om.impl.builder.Detachable, java.io.Closeable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>StAXBuilder</h4>
+<pre>protected&nbsp;StAXBuilder(<a href="../../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;omFactory,
+           <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+           <a href="../../../../../../org/apache/axiom/om/impl/builder/Detachable.html" title="interface in org.apache.axiom.om.impl.builder">Detachable</a>&nbsp;detachable,
+           <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a>&nbsp;closeable)</pre>
+<div class="block">For internal use only.</div>
+</li>
+</ul>
+<a name="StAXBuilder(org.apache.axiom.om.OMFactory, javax.xml.stream.XMLStreamReader)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>StAXBuilder</h4>
+<pre>protected&nbsp;StAXBuilder(<a href="../../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;omFactory,
+           <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i></i></div>
+</li>
+</ul>
+<a name="StAXBuilder(org.apache.axiom.om.OMFactory, javax.xml.stream.XMLStreamReader, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>StAXBuilder</h4>
+<pre>protected&nbsp;StAXBuilder(<a href="../../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;omFactory,
+           <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser,
+           <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;encoding)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i></i></div>
+</li>
+</ul>
+<a name="StAXBuilder(javax.xml.stream.XMLStreamReader)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>StAXBuilder</h4>
+<pre>protected&nbsp;StAXBuilder(<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;parser)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i></i></div>
+</li>
+</ul>
+<a name="StAXBuilder()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>StAXBuilder</h4>
+<pre>protected&nbsp;StAXBuilder()</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i></i></div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="init(java.io.InputStream, java.lang.String, java.lang.String, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>init</h4>
+<pre>public&nbsp;void&nbsp;init(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;inputStream,
+        <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;charSetEncoding,
+        <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;url,
+        <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)
+          throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Not used anywhere</i></div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setOMBuilderFactory(org.apache.axiom.om.OMFactory)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setOMBuilderFactory</h4>
+<pre>public&nbsp;void&nbsp;setOMBuilderFactory(<a href="../../../../../../org/apache/axiom/om/OMFactory.html" title="interface in org.apache.axiom.om">OMFactory</a>&nbsp;ombuilderFactory)</pre>
+<div class="block">Method setOMBuilderFactory.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ombuilderFactory</code> - </dd></dl>
+</li>
+</ul>
+<a name="processNamespaceData(org.apache.axiom.om.OMElement)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>processNamespaceData</h4>
+<pre>protected abstract&nbsp;void&nbsp;processNamespaceData(<a href="../../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;node)</pre>
+<div class="block">Method processNamespaceData.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>node</code> - </dd></dl>
+</li>
+</ul>
+<a name="processAttributes(org.apache.axiom.om.OMElement)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>processAttributes</h4>
+<pre>protected&nbsp;void&nbsp;processAttributes(<a href="../../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;node)</pre>
+<div class="block">Method processAttributes.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>node</code> - </dd></dl>
+</li>
+</ul>
+<a name="createOMText(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createOMText</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a>&nbsp;createOMText(int&nbsp;textType)</pre>
+<div class="block">This method will check whether the text can be optimizable using IS_BINARY flag. If that is
+ set then we try to get the data handler.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>textType</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>omNode</dd></dl>
+</li>
+</ul>
+<a name="debugDiscarded(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>debugDiscarded</h4>
+<pre>public&nbsp;void&nbsp;debugDiscarded(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;container)</pre>
+<div class="block">For internal use only.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>container</code> - </dd></dl>
+</li>
+</ul>
+<a name="discard(org.apache.axiom.om.OMElement)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>discard</h4>
+<pre>public&nbsp;void&nbsp;discard(<a href="../../../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;element)
+             throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#discard(org.apache.axiom.om.OMElement)">discard</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="discard(org.apache.axiom.om.OMContainer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>discard</h4>
+<pre>public&nbsp;void&nbsp;discard(<a href="../../../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>&nbsp;container)
+             throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getText()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getText</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getText()
+               throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">Method getText.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>Returns String.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getNamespace()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNamespace</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getNamespace()
+                    throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">Method getNamespace.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>Returns String.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getNamespaceCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNamespaceCount</h4>
+<pre>public&nbsp;int&nbsp;getNamespaceCount()
+                      throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">Method getNamespaceCount.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>Returns int.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getNamespacePrefix(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNamespacePrefix</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getNamespacePrefix(int&nbsp;index)
+                          throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">Method getNamespacePrefix.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>Returns String.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getNamespaceUri(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNamespaceUri</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getNamespaceUri(int&nbsp;index)
+                       throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">Method getNamespaceUri.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>Returns String.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setCache(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCache</h4>
+<pre>public&nbsp;void&nbsp;setCache(boolean&nbsp;b)</pre>
+<div class="block">Method setCache.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#setCache(boolean)">setCache</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>b</code> - </dd></dl>
+</li>
+</ul>
+<a name="isCache()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isCache</h4>
+<pre>public&nbsp;boolean&nbsp;isCache()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#isCache()">isCache</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if caching</dd></dl>
+</li>
+</ul>
+<a name="getName()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getName</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()
+               throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">Method getName.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>Returns String.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getPrefix()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPrefix</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPrefix()
+                 throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">Method getPrefix.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>Returns String.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getAttributeCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttributeCount</h4>
+<pre>public&nbsp;int&nbsp;getAttributeCount()
+                      throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">Method getAttributeCount.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>Returns int.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getAttributeNamespace(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttributeNamespace</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getAttributeNamespace(int&nbsp;arg)
+                             throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">Method getAttributeNamespace.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>arg</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>Returns String.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getAttributeName(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttributeName</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getAttributeName(int&nbsp;arg)
+                        throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">Method getAttributeName.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>arg</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>Returns String.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getAttributePrefix(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttributePrefix</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getAttributePrefix(int&nbsp;arg)
+                          throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">Method getAttributePrefix.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>arg</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>Returns String.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getParser()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getParser</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getParser()</pre>
+<div class="block">Get the underlying <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> used by this builder. Note that for this type of
+ builder, accessing the underlying parser implies that can no longer be used, and any attempt
+ to call <a href="../../../../../../org/apache/axiom/om/impl/builder/StAXBuilder.html#next()"><code>next()</code></a> will result in an exception.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#getParser()">getParser</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>The <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> object used by this builder. Note that the constraints
+         described in the Javadoc of the <code>reader</code> parameter of the
+         <a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html#create(java.lang.String, java.lang.String, org.apache.axiom.om.OMContainer, javax.xml.stream.XMLStreamReader, org.apache.axiom.om.OMFactory)"><code>CustomBuilder.create(String, String, OMContainer, XMLStreamReader, OMFactory)</code></a>
+         method also apply to the stream reader returned by this method, i.e.:
+         <ul>
+         <li>The caller should use
+         <a href="../../../../../../org/apache/axiom/util/stax/xop/XOPUtils.html#getXOPEncodedStream(javax.xml.stream.XMLStreamReader)"><code>XOPUtils.getXOPEncodedStream(XMLStreamReader)</code></a>
+         to get an XOP encoded stream from the return value.
+         <li>To get access to the bare StAX parser implementation, the caller should use
+         <a href="../../../../../../org/apache/axiom/util/stax/XMLStreamReaderUtils.html#getOriginalXMLStreamReader(javax.xml.stream.XMLStreamReader)"><code>XMLStreamReaderUtils.getOriginalXMLStreamReader(XMLStreamReader)</code></a>.
+         </ul></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the parser has already been accessed</dd></dl>
+</li>
+</ul>
+<a name="disableCaching()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>disableCaching</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</a>&nbsp;disableCaching()</pre>
+<div class="block">For internal use only.</div>
+</li>
+</ul>
+<a name="reenableCaching(org.apache.axiom.om.OMContainer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reenableCaching</h4>
+<pre>public&nbsp;void&nbsp;reenableCaching(<a href="../../../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>&nbsp;container)</pre>
+<div class="block">For internal use only.</div>
+</li>
+</ul>
+<a name="isCompleted()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isCompleted</h4>
+<pre>public&nbsp;boolean&nbsp;isCompleted()</pre>
+<div class="block">Method isCompleted.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#isCompleted()">isCompleted</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>Returns boolean.</dd></dl>
+</li>
+</ul>
+<a name="createOMElement()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createOMElement</h4>
+<pre>protected abstract&nbsp;<a href="../../../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a>&nbsp;createOMElement()
+                                   throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">This method is called with the XMLStreamConstants.START_ELEMENT event.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>Returns OMNode.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="next()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>next</h4>
+<pre>public abstract&nbsp;int&nbsp;next()
+                  throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block">Forwards the parser one step further, if parser is not completed yet. If this is called after
+ parser is done, then throw an OMException. If the cache is set to false, then returns the
+ event, *without* building the OM tree. If the cache is set to true, then handles all the
+ events within this, and builds the object structure appropriately and returns the event.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#next()">next</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>Returns int.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+<a name="registerCustomBuilder(javax.xml.namespace.QName, int, org.apache.axiom.om.impl.builder.CustomBuilder)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerCustomBuilder</h4>
+<pre>public&nbsp;<a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a>&nbsp;registerCustomBuilder(<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qName,
+                                  int&nbsp;maxDepth,
+                                  <a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a>&nbsp;customBuilder)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilderSupport.html#registerCustomBuilder(javax.xml.namespace.QName, int, org.apache.axiom.om.impl.builder.CustomBuilder)">CustomBuilderSupport</a></code></strong></div>
+<div class="block">Register a CustomBuilder associated with the indicated QName.
+ The CustomBuilder will be used when an element of that qname is encountered.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilderSupport.html#registerCustomBuilder(javax.xml.namespace.QName, int, org.apache.axiom.om.impl.builder.CustomBuilder)">registerCustomBuilder</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilderSupport.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilderSupport</a></code></dd>
+<dd><code>maxDepth</code> - indicate the maximum depth that this qname will be found. (root = 0)</dd>
+<dt><span class="strong">Returns:</span></dt><dd>replaced CustomBuilder or null</dd></dl>
+</li>
+</ul>
+<a name="registerCustomBuilderForPayload(org.apache.axiom.om.impl.builder.CustomBuilder)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerCustomBuilderForPayload</h4>
+<pre>public&nbsp;<a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a>&nbsp;registerCustomBuilderForPayload(<a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a>&nbsp;customBuilder)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilderSupport.html#registerCustomBuilderForPayload(org.apache.axiom.om.impl.builder.CustomBuilder)">CustomBuilderSupport</a></code></strong></div>
+<div class="block">Register a CustomBuilder for a payload.
+ The payload is defined as the elements inside a SOAPBody or the 
+ document element of a REST message.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilderSupport.html#registerCustomBuilderForPayload(org.apache.axiom.om.impl.builder.CustomBuilder)">registerCustomBuilderForPayload</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilderSupport.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilderSupport</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>replaced CustomBuilder or null</dd></dl>
+</li>
+</ul>
+<a name="getCustomBuilder(java.lang.String, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCustomBuilder</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/axiom/om/impl/builder/CustomBuilder.html" title="interface in org.apache.axiom.om.impl.builder">CustomBuilder</a>&nbsp;getCustomBuilder(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;namespace,
+                             <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localPart)</pre>
+<div class="block">Return CustomBuilder associated with the namespace/localPart</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>namespace</code> - </dd><dd><code>localPart</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>CustomBuilder or null</dd></dl>
+</li>
+</ul>
+<a name="getBuilderType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBuilderType</h4>
+<pre>public&nbsp;short&nbsp;getBuilderType()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#getBuilderType()">OMXMLParserWrapper</a></code></strong></div>
+<div class="block">Returns the type of the builder. Can be either <a href="../../../../../../org/apache/axiom/om/OMConstants.html#PUSH_TYPE_BUILDER"><code>OMConstants.PUSH_TYPE_BUILDER</code></a>
+ or <a href="../../../../../../org/apache/axiom/om/OMConstants.html#PULL_TYPE_BUILDER"><code>OMConstants.PULL_TYPE_BUILDER</code></a>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#getBuilderType()">getBuilderType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>Returns short.</dd></dl>
+</li>
+</ul>
+<a name="registerExternalContentHandler(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerExternalContentHandler</h4>
+<pre>public&nbsp;void&nbsp;registerExternalContentHandler(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<div class="block">Method registerExternalContentHandler.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#registerExternalContentHandler(java.lang.Object)">registerExternalContentHandler</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>obj</code> - </dd></dl>
+</li>
+</ul>
+<a name="getRegisteredContentHandler()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRegisteredContentHandler</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getRegisteredContentHandler()</pre>
+<div class="block">Method getRegisteredContentHandler.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#getRegisteredContentHandler()">getRegisteredContentHandler</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>Returns Object.</dd></dl>
+</li>
+</ul>
+<a name="createDocument()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createDocument</h4>
+<pre>protected abstract&nbsp;<a href="../../../../../../org/apache/axiom/om/OMDocument.html" title="interface in org.apache.axiom.om">OMDocument</a>&nbsp;createDocument()</pre>
+</li>
+</ul>
+<a name="createDocumentIfNecessary()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createDocumentIfNecessary</h4>
+<pre>protected&nbsp;void&nbsp;createDocumentIfNecessary()</pre>
+</li>
+</ul>
+<a name="getDocument()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDocument</h4>
+<pre>public&nbsp;<a href="../../../../../../org/apache/axiom/om/OMDocument.html" title="interface in org.apache.axiom.om">OMDocument</a>&nbsp;getDocument()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#getDocument()">OMXMLParserWrapper</a></code></strong></div>
+<div class="block">Get the document being built by this builder.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#getDocument()">getDocument</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the <a href="../../../../../../org/apache/axiom/om/OMDocument.html" title="interface in org.apache.axiom.om"><code>OMDocument</code></a> instance</dd></dl>
+</li>
+</ul>
+<a name="getCharsetEncoding()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCharsetEncoding</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getCharsetEncoding()</pre>
+</li>
+</ul>
+<a name="close()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>close</h4>
+<pre>public&nbsp;void&nbsp;close()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#close()">OMXMLParserWrapper</a></code></strong></div>
+<div class="block">Close this builder. This method frees the resources associated with this builder. In
+ particular, it releases the resources held by the underlying parser. This method does
+ <b>not</b> close the underlying input source.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#close()">close</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getReaderProperty(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getReaderProperty</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getReaderProperty(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)
+                         throws <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></pre>
+<div class="block">Get the value of a feature/property from the underlying XMLStreamReader implementation
+ without accessing the XMLStreamReader. https://issues.apache.org/jira/browse/AXIOM-348</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>TODO</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getCharacterEncoding()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCharacterEncoding</h4>
+<pre>public&nbsp;<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getCharacterEncoding()</pre>
+<div class="block">Returns the encoding style of the XML data</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#getCharacterEncoding()">getCharacterEncoding</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the character encoding, defaults to "UTF-8"</dd></dl>
+</li>
+</ul>
+<a name="setAutoClose(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAutoClose</h4>
+<pre>public&nbsp;void&nbsp;setAutoClose(boolean&nbsp;autoClose)</pre>
+<div class="block">For internal use only.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>autoClose</code> - </dd></dl>
+</li>
+</ul>
+<a name="isClosed()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isClosed</h4>
+<pre>public&nbsp;boolean&nbsp;isClosed()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>if parser is closed</dd></dl>
+</li>
+</ul>
+<a name="releaseParserOnClose(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>releaseParserOnClose</h4>
+<pre>public&nbsp;void&nbsp;releaseParserOnClose(boolean&nbsp;value)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>As of Axiom 1.2.15, the builder always releases the parser.</i></div>
+</li>
+</ul>
+<a name="detach()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>detach</h4>
+<pre>public&nbsp;void&nbsp;detach()
+            throws <a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#detach()">OMXMLParserWrapper</a></code></strong></div>
+<div class="block">Detach this builder from its underlying source, so that the state of the source object can be
+ changed without impact on the object model produced by this builder. The effect of this
+ method depends on the type of source object passed to <a href="../../../../../../org/apache/axiom/om/OMXMLBuilderFactory.html" title="class in org.apache.axiom.om"><code>OMXMLBuilderFactory</code></a> to create
+ the builder:
+ <p>
+ <table border="2" rules="all" cellpadding="4" cellspacing="0">
+ <caption>Actions performed by the <a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#detach()"><code>OMXMLParserWrapper.detach()</code></a> method</caption>
+ <tr>
+ <th>Source object type</th>
+ <th>Action performed by this method</th>
+ </tr>
+ <tr>
+ <td><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io"><code>InputStream</code></a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io"><code>Reader</code></a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/transform/stream/StreamSource.html?is-external=true" title="class or interface in javax.xml.transform.stream"><code>StreamSource</code></a> with <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io"><code>InputStream</code></a> or
+ <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io"><code>Reader</code></a></td>
+ <td>The remaining unprocessed content of the stream is read into memory so that it can be
+ safely closed. Note that this method doesn't close the stream; this is the responsibility of
+ the caller.</td>
+ </tr>
+ <tr>
+ <td><a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/transform/stream/StreamSource.html?is-external=true" title="class or interface in javax.xml.transform.stream"><code>StreamSource</code></a> with system ID and no stream</td>
+ <td>The remaining unprocessed content of the document is read into memory and the associated
+ stream is closed.</td>
+ <tr>
+ <td><a href="http://download.oracle.com/javase/1.5.0/docs/api/org/w3c/dom/Node.html?is-external=true" title="class or interface in org.w3c.dom"><code>Node</code></a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/transform/dom/DOMSource.html?is-external=true" title="class or interface in javax.xml.transform.dom"><code>DOMSource</code></a>, <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/transform/sax/SAXSource.html?is-external=true" title="class or interface in javax.xml.transform.sax"><code>SAXSource</code></a></td>
+ <td>The object model is built completely.</td>
+ </tr>
+ <tr>
+ <td><a href="../../../../../../org/apache/axiom/attachments/Attachments.html" title="class in org.apache.axiom.attachments"><code>Attachments</code></a></td>
+ <td>All MIME parts are fetched so that the stream from which the <a href="../../../../../../org/apache/axiom/attachments/Attachments.html" title="class in org.apache.axiom.attachments"><code>Attachments</code></a> object
+ has been created can safely be closed.</td>
+ </tr>
+ </table></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html#detach()">detach</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/axiom/om/OMXMLParserWrapper.html" title="interface in org.apache.axiom.om">OMXMLParserWrapper</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/StAXBuilder.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/apache/axiom/om/impl/builder/OMFactoryEx.html" title="interface in org.apache.axiom.om.impl.builder"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/apache/axiom/om/impl/builder/StAXOMBuilder.html" title="class in org.apache.axiom.om.impl.builder"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/axiom/om/impl/builder/StAXBuilder.html" target="_top">Frames</a></li>
+<li><a href="StAXBuilder.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &copy; <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

@@ -1,0 +1,1333 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>OMElement (Apache Axiom)</title>
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="OMElement (Apache Axiom)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/OMElement.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../org/apache/axiom/om/OMDocument.html" title="interface in org.apache.axiom.om"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../org/apache/axiom/om/OMEntityReference.html" title="interface in org.apache.axiom.om"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?org/apache/axiom/om/OMElement.html" target="_top">Frames</a></li>
+<li><a href="OMElement.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.axiom.om</div>
+<h2 title="Interface OMElement" class="title">Interface OMElement</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Superinterfaces:</dt>
+<dd><a href="../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>, <a href="../../../../org/apache/axiom/om/OMInformationItem.html" title="interface in org.apache.axiom.om">OMInformationItem</a>, <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html" title="interface in org.apache.axiom.om">OMNamedInformationItem</a>, <a href="../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a>, <a href="../../../../org/apache/axiom/om/OMSerializable.html" title="interface in org.apache.axiom.om">OMSerializable</a></dd>
+</dl>
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><a href="../../../../org/apache/axiom/om/impl/OMElementEx.html" title="interface in org.apache.axiom.om.impl">OMElementEx</a>, <a href="../../../../org/apache/axiom/om/OMSourcedElement.html" title="interface in org.apache.axiom.om">OMSourcedElement</a>, <a href="../../../../org/apache/axiom/soap/SOAPBody.html" title="interface in org.apache.axiom.soap">SOAPBody</a>, <a href="../../../../org/apache/axiom/soap/SOAPEnvelope.html" title="interface in org.apache.axiom.soap">SOAPEnvelope</a>, <a href="../../../../org/apache/axiom/soap/SOAPFault.html" title="interface in org.apache.axiom.soap">SOAPFault</a>, <a href="../../../../org/apache/axiom/soap/SOAPFaultClassifier.html" title="interface in org.apache.axiom.soap">SOAPFaultClassifier</a>, <a href="../../../../org/apache/axiom/soap/SOAPFaultCode.html" title="interface in org.apache.axiom.soap">SOAPFaultCode</a>, <a href="../../../../org/apache/axiom/soap/SOAPFaultDetail.html" title="interface in org.apache.axiom.soap">SOAPFaultDetail</a>, <a href="../../../../org/apache/axiom/soap/SOAPFaultNode.html" title="interface in org.apache.axiom.soap">SOAPFaultNode</a>, <a href="../../../../org/apache/axiom/soap/SOAPFaultReason.html" title="interface in org.apache.axiom.soap">SOAPFaultReason</a>, <a href="../../../../org/apache/axiom/soap/SOAPFaultRole.html" title="interface in org.apache.axiom.soap">SOAPFaultRole</a>, <a href="../../../../org/apache/axiom/soap/SOAPFaultSubCode.html" title="interface in org.apache.axiom.soap">SOAPFaultSubCode</a>, <a href="../../../../org/apache/axiom/soap/SOAPFaultText.html" title="interface in org.apache.axiom.soap">SOAPFaultText</a>, <a href="../../../../org/apache/axiom/soap/SOAPFaultValue.html" title="interface in org.apache.axiom.soap">SOAPFaultValue</a>, <a href="../../../../org/apache/axiom/soap/SOAPHeader.html" title="interface in org.apache.axiom.soap">SOAPHeader</a>, <a href="../../../../org/apache/axiom/soap/SOAPHeaderBlock.html" title="interface in org.apache.axiom.soap">SOAPHeaderBlock</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public interface <span class="strong">OMElement</span>
+extends <a href="../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a>, <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html" title="interface in org.apache.axiom.om">OMNamedInformationItem</a></pre>
+<div class="block">A particular kind of node that represents an element infoset information item.
+ <p>
+ An element has a collection of children, attributes, and namespace declarations. In contrast with
+ DOM, this interface exposes namespace declarations separately from the attributes.
+ <p>
+ Namespace declarations are either added explicitly using
+ <a href="../../../../org/apache/axiom/om/OMElement.html#declareNamespace(java.lang.String, java.lang.String)"><code>declareNamespace(String, String)</code></a>, <a href="../../../../org/apache/axiom/om/OMElement.html#declareDefaultNamespace(java.lang.String)"><code>declareDefaultNamespace(String)</code></a> or
+ <a href="../../../../org/apache/axiom/om/OMElement.html#declareNamespace(org.apache.axiom.om.OMNamespace)"><code>declareNamespace(OMNamespace)</code></a>, or are created implicitly as side effect of other method
+ calls:
+ <ul>
+ <li>If the element is created with a namespace and no matching namespace declaration is in scope
+ in the location in the tree where the element is created, then an appropriate namespace
+ declaration will be automatically added to the newly created element. The exact rules depend on
+ the method chosen to create the element; see for example <a href="../../../../org/apache/axiom/om/OMFactory.html#createOMElement(javax.xml.namespace.QName)"><code>OMFactory.createOMElement(QName)</code></a>.
+ <li>If an attribute with a namespace is added, but no matching namespace declaration is in scope
+ in the element, one is automatically added. See <a href="../../../../org/apache/axiom/om/OMElement.html#addAttribute(org.apache.axiom.om.OMAttribute)"><code>addAttribute(OMAttribute)</code></a> for more
+ details.
+ </ul>
+ Thus, creating a new element or adding an attribute preserves the consistency of the object model
+ with respect to namespaces. However, Axiom does not enforce namespace well-formedness for all
+ possible operations on the object model. E.g. moving an element from one location in the tree to
+ another one may cause the object model to loose its namespace well-formedness. In that case it is
+ possible that the object model contains elements or attributes with namespaces for which no
+ corresponding namespace declarations are in scope.
+ <p>
+ Fortunately, loosing namespace well-formedness has only very limited impact:
+ <ul>
+ <li>If namespace well-formedness is lost, the string to <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a> resolution for attribute
+ values and element content may be inconsistent, i.e. <a href="../../../../org/apache/axiom/om/OMElement.html#resolveQName(java.lang.String)"><code>resolveQName(String)</code></a>,
+ <a href="../../../../org/apache/axiom/om/OMElement.html#getTextAsQName()"><code>getTextAsQName()</code></a> and <a href="../../../../org/apache/axiom/om/OMText.html#getTextAsQName()"><code>OMText.getTextAsQName()</code></a> may return incorrect results.
+ However, it should be noted that these methods are most relevant for object model instances that
+ have been loaded from existing documents or messages. These object models are guaranteed to be
+ well-formed with respect to namespaces (unless they have been modified after loading).
+ <li>During serialization, Axiom will automatically repair any namespace inconsistencies. It will
+ add necessary namespace declarations to the output document where they are missing in the object
+ model and generate modified namespace declarations where the original ones in the object model
+ are inconsistent. It will also omit redundant namespace declarations. Axiom guarantees that in
+ the output document, every element and attribute (and <a href="../../../../org/apache/axiom/om/OMText.html" title="interface in org.apache.axiom.om"><code>OMText</code></a> instance with a
+ <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a> value) will have the same namespace URI as in the object model, thus preserving the
+ intended semantics of the document. On the other hand, the namespace prefixes used in the output
+ document may differ from the ones in the object model.
+ <li>More precisely, Axiom will always make sure that any <a href="../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om"><code>OMElement</code></a> or <a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om"><code>OMAttribute</code></a>
+ node will keep the namespace URI that has been assigned to the node at creation time, unless the
+ namespace is explicitly changed using <a href="../../../../org/apache/axiom/om/OMElement.html#setNamespace(org.apache.axiom.om.OMNamespace)"><code>setNamespace(OMNamespace)</code></a> or
+ <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#setNamespace(org.apache.axiom.om.OMNamespace, boolean)"><code>OMNamedInformationItem.setNamespace(OMNamespace, boolean)</code></a>.
+ </ul></div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.apache.axiom.om.OMNode">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;org.apache.axiom.om.<a href="../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a></h3>
+<code><a href="../../../../org/apache/axiom/om/OMNode.html#CDATA_SECTION_NODE">CDATA_SECTION_NODE</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#COMMENT_NODE">COMMENT_NODE</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#DTD_NODE">DTD_NODE</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#ELEMENT_NODE">ELEMENT_NODE</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#ENTITY_REFERENCE_NODE">ENTITY_REFERENCE_NODE</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#PI_NODE">PI_NODE</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#SPACE_NODE">SPACE_NODE</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#TEXT_NODE">TEXT_NODE</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om">OMAttribute</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#addAttribute(org.apache.axiom.om.OMAttribute)">addAttribute</a></strong>(<a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om">OMAttribute</a>&nbsp;attr)</code>
+<div class="block">Adds an attribute to this element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om">OMAttribute</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#addAttribute(java.lang.String, java.lang.String, org.apache.axiom.om.OMNamespace)">addAttribute</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName,
+            <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
+            <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;ns)</code>
+<div class="block">Adds an attribute to this element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#cloneOMElement()">cloneOMElement</a></strong>()</code>
+<div class="block">Clones this element and its descendants using default options.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#declareDefaultNamespace(java.lang.String)">declareDefaultNamespace</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>
+<div class="block">Add a namespace declaration for the default namespace to this element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#declareNamespace(org.apache.axiom.om.OMNamespace)">declareNamespace</a></strong>(<a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;namespace)</code>
+<div class="block">Declares a namespace with the element as its scope.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#declareNamespace(java.lang.String, java.lang.String)">declareNamespace</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix)</code>
+<div class="block">Add a namespace declaration for the given namespace URI to this element, optionally
+ generating a prefix for that namespace.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#findNamespace(java.lang.String, java.lang.String)">findNamespace</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+             <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix)</code>
+<div class="block">Finds a namespace with the given uri and prefix, in the scope of the hierarchy.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#findNamespaceURI(java.lang.String)">findNamespaceURI</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix)</code>
+<div class="block">Checks for a namespace in the context of this element with the given prefix and returns the
+ relevant namespace object, if available.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getAllAttributes()">getAllAttributes</a></strong>()</code>
+<div class="block">Returns a list of OMAttributes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getAllDeclaredNamespaces()">getAllDeclaredNamespaces</a></strong>()</code>
+<div class="block">Returns an iterator for all of the namespaces declared on this element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om">OMAttribute</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getAttribute(javax.xml.namespace.QName)">getAttribute</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qname)</code>
+<div class="block">Returns a named attribute if present.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getAttributeValue(javax.xml.namespace.QName)">getAttributeValue</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qname)</code>
+<div class="block">Returns a named attribute's value, if present.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getChildElements()">getChildElements</a></strong>()</code>
+<div class="block">Returns a filtered list of children - just the elements.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getDefaultNamespace()">getDefaultNamespace</a></strong>()</code>
+<div class="block">Get the default namespace in scope on this element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getFirstElement()">getFirstElement</a></strong>()</code>
+<div class="block">Returns the first child element of the element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getLineNumber()">getLineNumber</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/NamespaceContext.html?is-external=true" title="class or interface in javax.xml.namespace">NamespaceContext</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getNamespaceContext(boolean)">getNamespaceContext</a></strong>(boolean&nbsp;detached)</code>
+<div class="block">Get the namespace context of this element, as determined by the namespace declarations
+ present on this element and its ancestors.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getNamespacesInScope()">getNamespacesInScope</a></strong>()</code>
+<div class="block">Get an iterator that returns all namespaces in scope for this element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getText()">getText</a></strong>()</code>
+<div class="block">Returns the non-empty text children as a string.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getTextAsQName()">getTextAsQName</a></strong>()</code>
+<div class="block">Resolve the content of this element to a <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#getTextAsStream(boolean)">getTextAsStream</a></strong>(boolean&nbsp;cache)</code>
+<div class="block">Returns a stream representing the concatenation of the text nodes that are children of a
+ this element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#removeAttribute(org.apache.axiom.om.OMAttribute)">removeAttribute</a></strong>(<a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om">OMAttribute</a>&nbsp;attr)</code>
+<div class="block">Removes the given attribute from this element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#resolveQName(java.lang.String)">resolveQName</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;qname)</code>
+<div class="block">Resolves a QName literal in the namespace context defined by this element and produces a
+ corresponding <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#serialize(java.io.OutputStream)">serialize</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;output)</code>
+<div class="block">Serialize the node with caching enabled.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#serialize(java.io.OutputStream, org.apache.axiom.om.OMOutputFormat)">serialize</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;output,
+         <a href="../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om">OMOutputFormat</a>&nbsp;format)</code>
+<div class="block">Serialize the node with caching enabled.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#serialize(java.io.Writer)">serialize</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;writer)</code>
+<div class="block">Serialize the node with caching enabled.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#serialize(java.io.Writer, org.apache.axiom.om.OMOutputFormat)">serialize</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;writer,
+         <a href="../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om">OMOutputFormat</a>&nbsp;format)</code>
+<div class="block">Serialize the node with caching enabled.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#serializeAndConsume(java.io.OutputStream)">serializeAndConsume</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;output)</code>
+<div class="block">Serialize the node without caching.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#serializeAndConsume(java.io.OutputStream, org.apache.axiom.om.OMOutputFormat)">serializeAndConsume</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;output,
+                   <a href="../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om">OMOutputFormat</a>&nbsp;format)</code>
+<div class="block">Serialize the node without caching.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#serializeAndConsume(java.io.Writer)">serializeAndConsume</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;writer)</code>
+<div class="block">Serialize the node without caching.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#serializeAndConsume(java.io.Writer, org.apache.axiom.om.OMOutputFormat)">serializeAndConsume</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;writer,
+                   <a href="../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om">OMOutputFormat</a>&nbsp;format)</code>
+<div class="block">Serialize the node without caching.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#setLineNumber(int)">setLineNumber</a></strong>(int&nbsp;lineNumber)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#setNamespace(org.apache.axiom.om.OMNamespace)">setNamespace</a></strong>(<a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;namespace)</code>
+<div class="block">Set the namespace for this element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#setNamespaceWithNoFindInCurrentScope(org.apache.axiom.om.OMNamespace)">setNamespaceWithNoFindInCurrentScope</a></strong>(<a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;namespace)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Use <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#setNamespace(org.apache.axiom.om.OMNamespace, boolean)"><code>OMNamedInformationItem.setNamespace(OMNamespace, boolean)</code></a> with
+             <code>declare</code> set to <code>false</code>.</i></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#setText(javax.xml.namespace.QName)">setText</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qname)</code>
+<div class="block">Set the content of this element to the given <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#setText(java.lang.String)">setText</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text)</code>
+<div class="block">Set the content of this element to the given text.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#toString()">toString</a></strong>()</code>
+<div class="block">Convenience method to serialize the element to a string with caching enabled.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#toStringWithConsume()">toStringWithConsume</a></strong>()</code>
+<div class="block">Convenience method to serialize the element to a string without caching.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#undeclarePrefix(java.lang.String)">undeclarePrefix</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix)</code>
+<div class="block">Add a namespace declaration that undeclares a given prefix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/axiom/om/OMElement.html#writeTextTo(java.io.Writer, boolean)">writeTextTo</a></strong>(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;out,
+           boolean&nbsp;cache)</code>
+<div class="block">Write the content of the text nodes that are children of a given element to a <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><code>Writer</code></a>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.axiom.om.OMNode">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.apache.axiom.om.<a href="../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a></h3>
+<code><a href="../../../../org/apache/axiom/om/OMNode.html#buildWithAttachments()">buildWithAttachments</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#detach()">detach</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#discard()">discard</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#getNextOMSibling()">getNextOMSibling</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#getParent()">getParent</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#getPreviousOMSibling()">getPreviousOMSibling</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#getType()">getType</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#insertSiblingAfter(org.apache.axiom.om.OMNode)">insertSiblingAfter</a>, <a href="../../../../org/apache/axiom/om/OMNode.html#insertSiblingBefore(org.apache.axiom.om.OMNode)">insertSiblingBefore</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.axiom.om.OMContainer">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.apache.axiom.om.<a href="../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a></h3>
+<code><a href="../../../../org/apache/axiom/om/OMContainer.html#addChild(org.apache.axiom.om.OMNode)">addChild</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getBuilder()">getBuilder</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getChildren()">getChildren</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getChildrenWithLocalName(java.lang.String)">getChildrenWithLocalName</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getChildrenWithName(javax.xml.namespace.QName)">getChildrenWithName</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getChildrenWithNamespaceURI(java.lang.String)">getChildrenWithNamespaceURI</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getDescendants(boolean)">getDescendants</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getFirstChildWithName(javax.xml.namespace.QName)">getFirstChildWithName</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getFirstOMChild()">getFirstOMChild</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getSAXResult()">getSAXResult</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getSAXSource(boolean)">getSAXSource</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getXMLStreamReader()">getXMLStreamReader</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getXMLStreamReader(boolean)">getXMLStreamReader</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getXMLStreamReader(boolean, org.apache.axiom.om.OMXMLStreamReaderConfiguration)">getXMLStreamReader</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#getXMLStreamReaderWithoutCaching()">getXMLStreamReaderWithoutCaching</a>, <a href="../../../../org/apache/axiom/om/OMContainer.html#removeChildren()">removeChildren</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.axiom.om.OMSerializable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.apache.axiom.om.<a href="../../../../org/apache/axiom/om/OMSerializable.html" title="interface in org.apache.axiom.om">OMSerializable</a></h3>
+<code><a href="../../../../org/apache/axiom/om/OMSerializable.html#build()">build</a>, <a href="../../../../org/apache/axiom/om/OMSerializable.html#close(boolean)">close</a>, <a href="../../../../org/apache/axiom/om/OMSerializable.html#isComplete()">isComplete</a>, <a href="../../../../org/apache/axiom/om/OMSerializable.html#serialize(javax.xml.stream.XMLStreamWriter)">serialize</a>, <a href="../../../../org/apache/axiom/om/OMSerializable.html#serialize(javax.xml.stream.XMLStreamWriter, boolean)">serialize</a>, <a href="../../../../org/apache/axiom/om/OMSerializable.html#serializeAndConsume(javax.xml.stream.XMLStreamWriter)">serializeAndConsume</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.axiom.om.OMInformationItem">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.apache.axiom.om.<a href="../../../../org/apache/axiom/om/OMInformationItem.html" title="interface in org.apache.axiom.om">OMInformationItem</a></h3>
+<code><a href="../../../../org/apache/axiom/om/OMInformationItem.html#clone(org.apache.axiom.om.OMCloneOptions)">clone</a>, <a href="../../../../org/apache/axiom/om/OMInformationItem.html#getOMFactory()">getOMFactory</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.axiom.om.OMNamedInformationItem">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.apache.axiom.om.<a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html" title="interface in org.apache.axiom.om">OMNamedInformationItem</a></h3>
+<code><a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#getLocalName()">getLocalName</a>, <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#getNamespace()">getNamespace</a>, <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#getNamespaceURI()">getNamespaceURI</a>, <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#getPrefix()">getPrefix</a>, <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#getQName()">getQName</a>, <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#hasName(javax.xml.namespace.QName)">hasName</a>, <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#setLocalName(java.lang.String)">setLocalName</a>, <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#setNamespace(org.apache.axiom.om.OMNamespace, boolean)">setNamespace</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getChildElements()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChildElements</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&nbsp;getChildElements()</pre>
+<div class="block">Returns a filtered list of children - just the elements.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>Returns an iterator over the child elements.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/axiom/om/OMContainer.html#getChildren()"><code>OMContainer.getChildren()</code></a>, 
+<a href="../../../../org/apache/axiom/om/OMContainer.html#getChildrenWithName(javax.xml.namespace.QName)"><code>OMContainer.getChildrenWithName(javax.xml.namespace.QName)</code></a></dd></dl>
+</li>
+</ul>
+<a name="declareNamespace(java.lang.String, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>declareNamespace</h4>
+<pre><a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;declareNamespace(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                           <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix)</pre>
+<div class="block">Add a namespace declaration for the given namespace URI to this element, optionally
+ generating a prefix for that namespace.
+ <p>
+ Note that this method can't be used to declare a default namespace. For that purpose use
+ <a href="../../../../org/apache/axiom/om/OMElement.html#declareDefaultNamespace(java.lang.String)"><code>declareDefaultNamespace(String)</code></a> or <a href="../../../../org/apache/axiom/om/OMElement.html#declareNamespace(org.apache.axiom.om.OMNamespace)"><code>declareNamespace(OMNamespace)</code></a>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>uri</code> - The namespace to declare in the current scope. The caller is expected to ensure
+            that the URI is a valid namespace name.</dd><dd><code>prefix</code> - The prefix to associate with the given namespace. The caller is expected to ensure
+            that this is a valid XML prefix. If <code>null</code> or the empty string is
+            given, a prefix will be auto-generated. <b>Please note that using the empty string
+            for this purpose is deprecated and will no longer be supported in Axiom 1.3.</b></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the created namespace information item</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if an attempt is made to bind a prefix to the empty namespace name</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/axiom/om/OMElement.html#declareNamespace(org.apache.axiom.om.OMNamespace)"><code>declareNamespace(OMNamespace)</code></a>, 
+<a href="../../../../org/apache/axiom/om/OMElement.html#findNamespace(java.lang.String, java.lang.String)"><code>findNamespace(String, String)</code></a>, 
+<a href="../../../../org/apache/axiom/om/OMElement.html#getAllDeclaredNamespaces()"><code>getAllDeclaredNamespaces()</code></a></dd></dl>
+</li>
+</ul>
+<a name="declareDefaultNamespace(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>declareDefaultNamespace</h4>
+<pre><a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;declareDefaultNamespace(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</pre>
+<div class="block">Add a namespace declaration for the default namespace to this element.
+ <p>
+ Note that this method will never change the namespace of the element itself. If an attempt is
+ made to add a namespace declaration that conflicts with the namespace information of the
+ element, an exception is thrown.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>uri</code> - The default namespace to declare in the current scope. The caller is expected to
+            ensure that the URI is a valid namespace name.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the created namespace information item</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code> - if an attempt is made to add a conflicting namespace declaration</dd></dl>
+</li>
+</ul>
+<a name="getDefaultNamespace()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDefaultNamespace</h4>
+<pre><a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;getDefaultNamespace()</pre>
+<div class="block">Get the default namespace in scope on this element.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>The default namespace or <code>null</code> if no default namespace is in scope. This
+         method never returns an <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om"><code>OMNamespace</code></a> object with an empty namespace URI; if
+         the element or one of its ancestors has a <tt>xmlns=""</tt> declaration, then
+         <code>null</code> is returned. Note that if the method returns an <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om"><code>OMNamespace</code></a>
+         object, then its prefix will obviously be the empty string.</dd></dl>
+</li>
+</ul>
+<a name="declareNamespace(org.apache.axiom.om.OMNamespace)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>declareNamespace</h4>
+<pre><a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;declareNamespace(<a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;namespace)</pre>
+<div class="block">Declares a namespace with the element as its scope.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>namespace</code> - The namespace to declare. If the prefix specified by the <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om"><code>OMNamespace</code></a>
+            object is <code>null</code>, then a prefix will be generated.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>The declared namespace, which will be equal to the <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om"><code>OMNamespace</code></a> object passed
+         as parameter, except if the prefix was <code>null</code>, in which case the return
+         value contains the generated prefix.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if an attempt is made to bind a prefix to the empty namespace name</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/axiom/om/OMElement.html#declareNamespace(java.lang.String, java.lang.String)"><code>declareNamespace(String, String)</code></a>, 
+<a href="../../../../org/apache/axiom/om/OMElement.html#findNamespace(java.lang.String, java.lang.String)"><code>findNamespace(String, String)</code></a>, 
+<a href="../../../../org/apache/axiom/om/OMElement.html#getAllDeclaredNamespaces()"><code>getAllDeclaredNamespaces()</code></a></dd></dl>
+</li>
+</ul>
+<a name="undeclarePrefix(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>undeclarePrefix</h4>
+<pre>void&nbsp;undeclarePrefix(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix)</pre>
+<div class="block">Add a namespace declaration that undeclares a given prefix. Prefix undeclaring is supported
+ in XML 1.1, but forbidden in XML 1.0. If an object model on which this method has been used
+ is later serialized to an XML 1.0 document, an error will occur. When serialized to an XML
+ 1.1 document, a namespace declaration in the form <tt>xmlns:p=""</tt> will be produced.
+ <p>
+ A namespace declaration with empty namespace name will be added even if no existing namespace
+ declaration for the given prefix is in scope in the context of the current element. If a
+ namespace declaration for the given prefix is already defined on this element, it will be
+ replaced.
+ <p>
+ The namespace declaration created by this method will be returned by
+ <a href="../../../../org/apache/axiom/om/OMElement.html#getAllDeclaredNamespaces()"><code>getAllDeclaredNamespaces()</code></a>. It is represented as an <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om"><code>OMNamespace</code></a> object for
+ which <a href="../../../../org/apache/axiom/om/OMNamespace.html#getNamespaceURI()"><code>OMNamespace.getNamespaceURI()</code></a> returns an empty string.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>prefix</code> - the prefix to undeclare</dd></dl>
+</li>
+</ul>
+<a name="findNamespace(java.lang.String, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findNamespace</h4>
+<pre><a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;findNamespace(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                        <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix)</pre>
+<div class="block">Finds a namespace with the given uri and prefix, in the scope of the hierarchy.
+ <p>
+ Searches from the current element and goes up the hiararchy until a match is found. If no
+ match is found, returns <tt>null</tt>.</p>
+ <p>
+ Either <tt>prefix</tt> or <tt>uri</tt> should be null.  Results are undefined if both are
+ specified.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>uri</code> - The namespace to look for.  If this is specified, <tt>prefix</tt> should be
+               null.</dd><dd><code>prefix</code> - The prefix to look for.  If this is specified, <tt>uri</tt> should be null.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>Returns the matching namespace declaration, or <tt>null</tt> if none was found.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/axiom/om/OMElement.html#declareNamespace(java.lang.String, java.lang.String)"><code>declareNamespace(String, String)</code></a>, 
+<a href="../../../../org/apache/axiom/om/OMElement.html#declareNamespace(org.apache.axiom.om.OMNamespace)"><code>declareNamespace(OMNamespace)</code></a>, 
+<a href="../../../../org/apache/axiom/om/OMElement.html#getAllDeclaredNamespaces()"><code>getAllDeclaredNamespaces()</code></a></dd></dl>
+</li>
+</ul>
+<a name="findNamespaceURI(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findNamespaceURI</h4>
+<pre><a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;findNamespaceURI(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix)</pre>
+<div class="block">Checks for a namespace in the context of this element with the given prefix and returns the
+ relevant namespace object, if available. If not available, returns null.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>prefix</code> - </dd></dl>
+</li>
+</ul>
+<a name="getAllDeclaredNamespaces()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllDeclaredNamespaces</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&nbsp;getAllDeclaredNamespaces()</pre>
+<div class="block">Returns an iterator for all of the namespaces declared on this element. Note that this is not
+ the same as the set of namespace declarations in scope. Since building a namespace context
+ and resolving namespace prefixes has some subtleties associated with it (such as masked
+ namespace declarations and prefix undeclaring), it is generally recommended to use one of the
+ following specialized methods for this purpose:
+ <ul>
+ <li><a href="../../../../org/apache/axiom/om/OMElement.html#getNamespacesInScope()"><code>getNamespacesInScope()</code></a> or <a href="../../../../org/apache/axiom/om/OMElement.html#getNamespaceContext(boolean)"><code>getNamespaceContext(boolean)</code></a> to calculate the
+ namespace context for the element.
+ <li><a href="../../../../org/apache/axiom/om/OMElement.html#findNamespace(java.lang.String, java.lang.String)"><code>findNamespace(String, String)</code></a> and <a href="../../../../org/apache/axiom/om/OMElement.html#findNamespaceURI(java.lang.String)"><code>findNamespaceURI(String)</code></a> to resolve a
+ namespace prefix or to find a namespace prefix for a given URI.
+ <li><a href="../../../../org/apache/axiom/om/OMElement.html#resolveQName(java.lang.String)"><code>resolveQName(String)</code></a> to resolve a QName literal.
+ <li><a href="../../../../org/apache/axiom/om/xpath/AXIOMXPath.html#AXIOMXPath(org.apache.axiom.om.OMElement, java.lang.String)"><code>AXIOMXPath.AXIOMXPath(OMElement, String)</code></a> or
+ <a href="../../../../org/apache/axiom/om/xpath/AXIOMXPath.html#AXIOMXPath(org.apache.axiom.om.OMAttribute)"><code>AXIOMXPath.AXIOMXPath(OMAttribute)</code></a> to create an XPath expression using the namespace
+ context of a given element.
+ </ul>
+ <p>
+ It is expected that applications only rarely use <a href="../../../../org/apache/axiom/om/OMElement.html#getAllDeclaredNamespaces()"><code>getAllDeclaredNamespaces()</code></a>
+ directly.
+ <p>
+ The iterator returned by this method supports <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Iterator.html?is-external=true#remove()" title="class or interface in java.util"><code>Iterator.remove()</code></a> and that method can
+ be used to remove a namespace declaration from this element.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>An iterator over the <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om"><code>OMNamespace</code></a> items declared on this element. If the
+         element has no namespace declarations, an empty iterator is returned.
+         <p>
+         Note that the returned iterator may be invalidated by a call to
+         <a href="../../../../org/apache/axiom/om/OMElement.html#declareNamespace(org.apache.axiom.om.OMNamespace)"><code>declareNamespace(OMNamespace)</code></a>, <a href="../../../../org/apache/axiom/om/OMElement.html#declareNamespace(java.lang.String, java.lang.String)"><code>declareNamespace(String, String)</code></a>,
+         <a href="../../../../org/apache/axiom/om/OMElement.html#declareDefaultNamespace(java.lang.String)"><code>declareDefaultNamespace(String)</code></a> or any other method that modifies the
+         namespace declarations of this element.</dd></dl>
+</li>
+</ul>
+<a name="getNamespacesInScope()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNamespacesInScope</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&nbsp;getNamespacesInScope()</pre>
+<div class="block">Get an iterator that returns all namespaces in scope for this element. This method may be
+ used to determine the namespace context for this element. For any given prefix, the iterator
+ returns at most one <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om"><code>OMNamespace</code></a> object with that prefix, and this object specifies
+ the namespace URI bound to the prefix. The iterator returns an <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om"><code>OMNamespace</code></a> object
+ with an empty prefix if and only if there is a default namespace. It will never return an
+ <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om"><code>OMNamespace</code></a> object with both the prefix and the namespace URI set to the empty
+ string, even if the element or one of its ancestors has a namespace declaration of the form
+ <tt>xmlns=""</tt>.
+ <p>
+ The order in which the iterator returns the namespaces is undefined, and invoking the
+ <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Iterator.html?is-external=true#remove()" title="class or interface in java.util"><code>Iterator.remove()</code></a> method on the returned iterator is not supported. The iterator may
+ be a "live" object, which means that results are undefined if the document is modified (in a
+ way that would modify the namespace context for the element) while the iterator is in use.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>an iterator over all namespaces in scope for this element</dd></dl>
+</li>
+</ul>
+<a name="getNamespaceContext(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNamespaceContext</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/NamespaceContext.html?is-external=true" title="class or interface in javax.xml.namespace">NamespaceContext</a>&nbsp;getNamespaceContext(boolean&nbsp;detached)</pre>
+<div class="block">Get the namespace context of this element, as determined by the namespace declarations
+ present on this element and its ancestors.
+ <p>
+ The method supports two different <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/NamespaceContext.html?is-external=true" title="class or interface in javax.xml.namespace"><code>NamespaceContext</code></a> implementation variants:
+ <ul>
+ <li>A "live" variant that keeps a reference to the element and that performs lookups by
+ accessing the object model. This means that any change in the object model will automatically
+ be reflected by the <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/NamespaceContext.html?is-external=true" title="class or interface in javax.xml.namespace"><code>NamespaceContext</code></a>.
+ <li>A "detached" variant that stores a snapshot of the namespace context and that doesn't
+ have any reference to the object model.
+ </ul>
+ <p>
+ Typically, creating a live <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/NamespaceContext.html?is-external=true" title="class or interface in javax.xml.namespace"><code>NamespaceContext</code></a> is cheaper, but the lookup performance of
+ a detached <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/NamespaceContext.html?is-external=true" title="class or interface in javax.xml.namespace"><code>NamespaceContext</code></a> is better. The detached variant should always be used if
+ the reference to the <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/NamespaceContext.html?is-external=true" title="class or interface in javax.xml.namespace"><code>NamespaceContext</code></a> is kept longer than the object model itself,
+ because in this case a live <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/NamespaceContext.html?is-external=true" title="class or interface in javax.xml.namespace"><code>NamespaceContext</code></a> would prevent the object model from
+ being garbage collected.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>detached</code> - <code>true</code> if the method should return a detached implementation,
+            <code>false</code> if the method should return a live object</dd>
+<dt><span class="strong">Returns:</span></dt><dd>The namespace context for this element. Note that the caller must not make any
+         assumption about the actual implementation class returned by this method.</dd></dl>
+</li>
+</ul>
+<a name="getAllAttributes()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllAttributes</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&nbsp;getAllAttributes()</pre>
+<div class="block">Returns a list of OMAttributes.
+ <p>
+ Note that the iterator returned by this function will be invalidated by any
+ <tt>addAttribute</tt> call.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>An iterator over the <a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om"><code>OMAttribute</code></a> items associated with the element. If the
+         element has no attributes, an empty iterator is returned.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/axiom/om/OMElement.html#getAttribute(javax.xml.namespace.QName)"><code>getAttribute(javax.xml.namespace.QName)</code></a>, 
+<a href="../../../../org/apache/axiom/om/OMElement.html#addAttribute(org.apache.axiom.om.OMAttribute)"><code>addAttribute(OMAttribute)</code></a>, 
+<a href="../../../../org/apache/axiom/om/OMElement.html#addAttribute(java.lang.String, java.lang.String, org.apache.axiom.om.OMNamespace)"><code>addAttribute(String, String, OMNamespace)</code></a></dd></dl>
+</li>
+</ul>
+<a name="getAttribute(javax.xml.namespace.QName)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttribute</h4>
+<pre><a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om">OMAttribute</a>&nbsp;getAttribute(<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qname)</pre>
+<div class="block">Returns a named attribute if present.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>qname</code> - the qualified name to search for</dd>
+<dt><span class="strong">Returns:</span></dt><dd>Returns an OMAttribute with the given name if found, or null</dd></dl>
+</li>
+</ul>
+<a name="getAttributeValue(javax.xml.namespace.QName)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttributeValue</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getAttributeValue(<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qname)</pre>
+<div class="block">Returns a named attribute's value, if present.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>qname</code> - the qualified name to search for</dd>
+<dt><span class="strong">Returns:</span></dt><dd>The attribute value, or <code>null</code> if no matching attribute is found.</dd></dl>
+</li>
+</ul>
+<a name="addAttribute(org.apache.axiom.om.OMAttribute)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addAttribute</h4>
+<pre><a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om">OMAttribute</a>&nbsp;addAttribute(<a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om">OMAttribute</a>&nbsp;attr)</pre>
+<div class="block">Adds an attribute to this element.
+ <p>
+ If the attribute already has an owner, the attribute is cloned (i.e. its name, value and
+ namespace are copied to a new attribute) and the new attribute is added to the element.
+ Otherwise the existing instance specified by the <code>attr</code> parameter is added to
+ the element. In both cases the owner of the added attribute is set to be the particular
+ <code>OMElement</code>.
+ <p>
+ If there is already an attribute with the same name and namespace URI, it will be replaced
+ and its owner set to <code>null</code>.
+ <p>
+ In the particular case where the attribute specified by <code>attr</code> is already owned
+ by the element, calling this method has no effect. 
+ <p>
+ Attributes are not stored in any particular order. In particular, there is no guarantee
+ that the added attribute will be returned as the last item by the iterator produced by
+ a subsequent call to <a href="../../../../org/apache/axiom/om/OMElement.html#getAllAttributes()"><code>getAllAttributes()</code></a>.
+ <p>
+ If the attribute being added has a namespace, but no corresponding namespace declaration is
+ in scope for the element (i.e. declared on the element or one of its ancestors), a new
+ namespace declaration is added to the element. Note that both the namespace prefix and URI
+ are taken into account when looking for an existing namespace declaration.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>attr</code> - The attribute to add.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>The attribute that was added to the element. As described above this may or may
+         not be the same as <code>attr</code>, depending on whether the attribute specified
+         by this parameter already has an owner or not.</dd></dl>
+</li>
+</ul>
+<a name="addAttribute(java.lang.String, java.lang.String, org.apache.axiom.om.OMNamespace)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addAttribute</h4>
+<pre><a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om">OMAttribute</a>&nbsp;addAttribute(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName,
+                       <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
+                       <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;ns)</pre>
+<div class="block">Adds an attribute to this element.
+ <p>
+ If the element already has an attribute with the same local name and namespace URI, then this
+ existing attribute will be removed from the element, i.e. this method will always create a
+ new <a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om"><code>OMAttribute</code></a> instance and never update an existing one.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>localName</code> - The local name for the attribute.</dd><dd><code>value</code> - The string value of the attribute. This function does not check to make sure that
+            the given attribute value can be serialized directly as an XML value. The caller
+            may, for example, pass a string with the character 0x01.</dd><dd><code>ns</code> - The namespace for the attribute. If no corresponding namespace declaration is in
+            scope, then a new namespace declaration will be added to the element. The
+            <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om"><code>OMNamespace</code></a> may have a <code>null</code> prefix, in which case the method
+            will generate a prefix (if no namespace declaration for the given namespace URI is
+            in scope) or use an existing one.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>Returns the added attribute.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if an attempt is made to create a prefixed attribute with an empty namespace name
+             or an unprefixed attribute with a namespace</dd></dl>
+</li>
+</ul>
+<a name="removeAttribute(org.apache.axiom.om.OMAttribute)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeAttribute</h4>
+<pre>void&nbsp;removeAttribute(<a href="../../../../org/apache/axiom/om/OMAttribute.html" title="interface in org.apache.axiom.om">OMAttribute</a>&nbsp;attr)</pre>
+<div class="block">Removes the given attribute from this element.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>attr</code> - the attribute to remove</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code> - if the attribute is not owned by this element</dd></dl>
+</li>
+</ul>
+<a name="getFirstElement()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFirstElement</h4>
+<pre><a href="../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;getFirstElement()</pre>
+<div class="block">Returns the first child element of the element.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>Returns the first child element of the element, or <tt>null</tt> if none was found.</dd></dl>
+</li>
+</ul>
+<a name="setText(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setText</h4>
+<pre>void&nbsp;setText(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text)</pre>
+<div class="block">Set the content of this element to the given text. If the element has children, then all
+ these children are detached before the content is set. If the parameter is a non empty
+ string, then the element will have a single child of type <a href="../../../../org/apache/axiom/om/OMText.html" title="interface in org.apache.axiom.om"><code>OMText</code></a> after the method
+ returns. If the parameter is <code>null</code> or an empty string, then the element will have
+ no children.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>text</code> - the new text content for the element</dd></dl>
+</li>
+</ul>
+<a name="setText(javax.xml.namespace.QName)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setText</h4>
+<pre>void&nbsp;setText(<a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qname)</pre>
+<div class="block">Set the content of this element to the given <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a>. If no matching namespace
+ declaration for the <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a> is in scope, then this method will add one. If the
+ <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a> specifies a namespace URI but no prefix, then a prefix will be generated. If
+ the element has children, then all these children are detached before the content is set. If
+ the parameter is not <code>null</code>, then the element will have a single child of type
+ <a href="../../../../org/apache/axiom/om/OMText.html" title="interface in org.apache.axiom.om"><code>OMText</code></a> after the method returns. If the parameter is <code>null</code>, then the
+ element will have no children.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>qname</code> - the QName value</dd></dl>
+</li>
+</ul>
+<a name="getText()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getText</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getText()</pre>
+<div class="block">Returns the non-empty text children as a string.
+ <p>
+ This method iterates over all the text children of the element and concatenates
+ them to a single string. Only direct children will be considered, i.e. the text
+ is not extracted recursively. For example the return value for
+ <tt>&lt;element&gt;A&lt;child&gt;B&lt;/child&gt;C&lt;/element&gt;</tt> will be <tt>AC</tt>.
+ <p>
+ All whitespace will be preserved.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>A string representing the concatenation of the child text nodes.
+         If there are no child text nodes, an empty string is returned.</dd></dl>
+</li>
+</ul>
+<a name="getTextAsStream(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTextAsStream</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a>&nbsp;getTextAsStream(boolean&nbsp;cache)</pre>
+<div class="block">Returns a stream representing the concatenation of the text nodes that are children of a
+ this element. The stream returned by this method produces exactly the same character
+ sequence as the the stream created by the following expression:
+ <pre>new StringReader(element.getText())</pre>
+ <p>
+ The difference is that the stream implementation returned by this method is optimized for
+ performance and is guaranteed to have constant memory usage, provided that:
+ <ol>
+ <li>The method is not required to cache the content of the <a href="../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om"><code>OMElement</code></a>, i.e.
+ <code>cache</code> is <code>false</code> or the element is an <a href="../../../../org/apache/axiom/om/OMSourcedElement.html" title="interface in org.apache.axiom.om"><code>OMSourcedElement</code></a> that
+ is backed by a non destructive <a href="../../../../org/apache/axiom/om/OMDataSource.html" title="interface in org.apache.axiom.om"><code>OMDataSource</code></a>.
+ <li>The underlying parser (or the implementation of the underlying <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream"><code>XMLStreamReader</code></a> in
+ the case of an <a href="../../../../org/apache/axiom/om/OMSourcedElement.html" title="interface in org.apache.axiom.om"><code>OMSourcedElement</code></a>) is non coalescing. Note that this is not the default
+ in Axiom and it may be necessary to configure the parser with
+ <a href="../../../../org/apache/axiom/om/util/StAXParserConfiguration.html#NON_COALESCING"><code>StAXParserConfiguration.NON_COALESCING</code></a>.
+ </ol>
+ <p>
+ When this method is used with <code>cache</code> set to <code>false</code> the caller must close the
+ returned stream before attempting to access other nodes in the tree.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>cache</code> - whether to enable caching when accessing the element</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a stream representing the concatenation of the text nodes</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/axiom/om/OMElement.html#getText()"><code>getText()</code></a></dd></dl>
+</li>
+</ul>
+<a name="writeTextTo(java.io.Writer, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeTextTo</h4>
+<pre>void&nbsp;writeTextTo(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;out,
+               boolean&nbsp;cache)
+                 throws <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Write the content of the text nodes that are children of a given element to a <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><code>Writer</code></a>.
+ If <code>cache</code> is true, this method has the same effect as the following instruction:
+ <pre>out.write(element.getText())</pre>
+ <p>
+ The difference is that this method is guaranteed to have constant memory usage and is
+ optimized for performance (with the same restrictions that apply to
+ <a href="../../../../org/apache/axiom/om/OMElement.html#getTextAsStream(boolean)"><code>getTextAsStream(boolean)</code></a>).
+ <p>
+ The method does <b>not</b> call <a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true#close()" title="class or interface in java.io"><code>Writer.close()</code></a>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>out</code> - the stream to write the content to</dd><dd><code>cache</code> - whether to enable caching when accessing the element</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMException.html" title="class in org.apache.axiom.om">OMException</a></code> - if an error occurs when reading from the element</dd>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an error occurs when writing to the stream</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/axiom/om/OMElement.html#getText()"><code>getText()</code></a></dd></dl>
+</li>
+</ul>
+<a name="getTextAsQName()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTextAsQName</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;getTextAsQName()</pre>
+<div class="block">Resolve the content of this element to a <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a>. The QName is interpreted in a way
+ that is compatible with the XML schema specification. In particular, surrounding whitespace
+ is ignored.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the resolved QName, or <code>null</code> if the element is empty or the QName could
+         not be resolved</dd></dl>
+</li>
+</ul>
+<a name="setNamespace(org.apache.axiom.om.OMNamespace)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setNamespace</h4>
+<pre>void&nbsp;setNamespace(<a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;namespace)</pre>
+<div class="block">Set the namespace for this element. In addition to changing the namespace URI and prefix of
+ the element information item, this method ensures that a corresponding namespace declaration
+ exists. If no corresponding namespace declaration is already in scope, then a new one will be
+ added to this element.
+ <p>
+ This method has the same effect as
+ <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#setNamespace(org.apache.axiom.om.OMNamespace, boolean)"><code>OMNamedInformationItem.setNamespace(OMNamespace, boolean)</code></a> with <code>declare</code>
+ set to <code>true</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>namespace</code> - The new namespace for this element, or <code>null</code> to remove the namespace
+            from this element. If an <a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om"><code>OMNamespace</code></a> instance with a <code>null</code>
+            prefix is given, then a prefix will be generated automatically. In this case, the
+            generated prefix can be determined using <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#getNamespace()"><code>OMNamedInformationItem.getNamespace()</code></a>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if an attempt is made to bind a prefix to the empty namespace name</dd></dl>
+</li>
+</ul>
+<a name="setNamespaceWithNoFindInCurrentScope(org.apache.axiom.om.OMNamespace)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setNamespaceWithNoFindInCurrentScope</h4>
+<pre>void&nbsp;setNamespaceWithNoFindInCurrentScope(<a href="../../../../org/apache/axiom/om/OMNamespace.html" title="interface in org.apache.axiom.om">OMNamespace</a>&nbsp;namespace)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Use <a href="../../../../org/apache/axiom/om/OMNamedInformationItem.html#setNamespace(org.apache.axiom.om.OMNamespace, boolean)"><code>OMNamedInformationItem.setNamespace(OMNamespace, boolean)</code></a> with
+             <code>declare</code> set to <code>false</code>.</i></div>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Convenience method to serialize the element to a string with caching enabled. Caching means
+ that the object model tree for the element will be fully built in memory and can be accessed
+ after invoking this method.
+ <p>
+ This method produces the same result as <a href="../../../../org/apache/axiom/om/OMContainer.html#serialize(java.io.Writer)"><code>OMContainer.serialize(Writer)</code></a>. In particular,
+ the element is always serialized as plain XML and <a href="../../../../org/apache/axiom/om/OMText.html" title="interface in org.apache.axiom.om"><code>OMText</code></a> nodes containing optimized
+ binary data are always inlined using base64 encoding. Since the output is accumulated into a
+ single string object, this may result in high memory consumption. Therefore this method
+ should be used with care.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the serialized object model</dd></dl>
+</li>
+</ul>
+<a name="toStringWithConsume()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toStringWithConsume</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toStringWithConsume()
+                           throws <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<div class="block">Convenience method to serialize the element to a string without caching. This method will not
+ built the object model tree in memory. This means that an attempt to access the object model
+ after invoking this method may result in an error (unless the object model was already fully
+ built before, e.g. because it was created programmatically).
+ <p>
+ As for <a href="../../../../org/apache/axiom/om/OMElement.html#toString()"><code>toString()</code></a>, this method may cause high memory consumption for object model
+ trees containing optimized binary data and should therefore be used with care.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the serialized object model</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="resolveQName(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resolveQName</h4>
+<pre><a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;resolveQName(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;qname)</pre>
+<div class="block">Resolves a QName literal in the namespace context defined by this element and produces a
+ corresponding <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a> object. The implementation uses the algorithm defined by the XML
+ Schema specification. In particular, the namespace for an unprefixed QName is the default
+ namespace (not the null namespace), i.e. QNames are resolved in the same way as element
+ names.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>qname</code> - the QName literal to resolve</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the <a href="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace"><code>QName</code></a> object, or <code>null</code> if the QName can't be resolved, i.e.
+         if the prefix is not bound in the namespace context of this element</dd></dl>
+</li>
+</ul>
+<a name="cloneOMElement()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cloneOMElement</h4>
+<pre><a href="../../../../org/apache/axiom/om/OMElement.html" title="interface in org.apache.axiom.om">OMElement</a>&nbsp;cloneOMElement()</pre>
+<div class="block">Clones this element and its descendants using default options. This method has the same
+ effect as <a href="../../../../org/apache/axiom/om/OMInformationItem.html#clone(org.apache.axiom.om.OMCloneOptions)"><code>OMInformationItem.clone(OMCloneOptions)</code></a> with default options.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the cloned element</dd></dl>
+</li>
+</ul>
+<a name="setLineNumber(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLineNumber</h4>
+<pre>void&nbsp;setLineNumber(int&nbsp;lineNumber)</pre>
+</li>
+</ul>
+<a name="getLineNumber()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLineNumber</h4>
+<pre>int&nbsp;getLineNumber()</pre>
+</li>
+</ul>
+<a name="serialize(java.io.OutputStream)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serialize</h4>
+<pre>void&nbsp;serialize(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;output)
+               throws <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<div class="block">Serialize the node with caching enabled.
+ <p>
+ This method will always serialize the infoset as plain XML. In particular, any <a href="../../../../org/apache/axiom/om/OMText.html" title="interface in org.apache.axiom.om"><code>OMText</code></a>
+ containing optimized binary will be inlined using base64 encoding.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMContainer.html#serialize(java.io.OutputStream)">serialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMNode.html#serialize(java.io.OutputStream)">serialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>output</code> - the byte stream to write the serialized infoset to</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="serialize(java.io.Writer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serialize</h4>
+<pre>void&nbsp;serialize(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;writer)
+               throws <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<div class="block">Serialize the node with caching enabled.
+ <p>
+ This method will always serialize the infoset as plain XML. In particular, any <a href="../../../../org/apache/axiom/om/OMText.html" title="interface in org.apache.axiom.om"><code>OMText</code></a>
+ containing optimized binary will be inlined using base64 encoding.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMContainer.html#serialize(java.io.Writer)">serialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMNode.html#serialize(java.io.Writer)">serialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>writer</code> - the character stream to write the serialized infoset to</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="serialize(java.io.OutputStream, org.apache.axiom.om.OMOutputFormat)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serialize</h4>
+<pre>void&nbsp;serialize(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;output,
+             <a href="../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om">OMOutputFormat</a>&nbsp;format)
+               throws <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<div class="block">Serialize the node with caching enabled.
+ <p>
+ The format of the output is controlled by the provided <a href="../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om"><code>OMOutputFormat</code></a> object. In
+ particular, <a href="../../../../org/apache/axiom/om/OMOutputFormat.html#setDoOptimize(boolean)"><code>OMOutputFormat.setDoOptimize(boolean)</code></a> can be used to instruct this method
+ to produce an XOP/MTOM encoded MIME message.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMContainer.html#serialize(java.io.OutputStream, org.apache.axiom.om.OMOutputFormat)">serialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMNode.html#serialize(java.io.OutputStream, org.apache.axiom.om.OMOutputFormat)">serialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>output</code> - the byte stream to write the serialized infoset to</dd><dd><code>format</code> - the output format to use</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="serialize(java.io.Writer, org.apache.axiom.om.OMOutputFormat)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serialize</h4>
+<pre>void&nbsp;serialize(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;writer,
+             <a href="../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om">OMOutputFormat</a>&nbsp;format)
+               throws <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<div class="block">Serialize the node with caching enabled.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMContainer.html#serialize(java.io.Writer, org.apache.axiom.om.OMOutputFormat)">serialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMNode.html#serialize(java.io.Writer, org.apache.axiom.om.OMOutputFormat)">serialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>writer</code> - the character stream to write the serialized infoset to</dd><dd><code>format</code> - the output format to use</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="serializeAndConsume(java.io.OutputStream)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serializeAndConsume</h4>
+<pre>void&nbsp;serializeAndConsume(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;output)
+                         throws <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<div class="block">Serialize the node without caching.
+ <p>
+ This method will always serialize the infoset as plain XML. In particular, any <a href="../../../../org/apache/axiom/om/OMText.html" title="interface in org.apache.axiom.om"><code>OMText</code></a>
+ containing optimized binary will be inlined using base64 encoding.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMContainer.html#serializeAndConsume(java.io.OutputStream)">serializeAndConsume</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMNode.html#serializeAndConsume(java.io.OutputStream)">serializeAndConsume</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>output</code> - the byte stream to write the serialized infoset to</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="serializeAndConsume(java.io.Writer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serializeAndConsume</h4>
+<pre>void&nbsp;serializeAndConsume(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;writer)
+                         throws <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<div class="block">Serialize the node without caching.
+ <p>
+ This method will always serialize the infoset as plain XML. In particular, any <a href="../../../../org/apache/axiom/om/OMText.html" title="interface in org.apache.axiom.om"><code>OMText</code></a>
+ containing optimized binary will be inlined using base64 encoding.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMContainer.html#serializeAndConsume(java.io.Writer)">serializeAndConsume</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMNode.html#serializeAndConsume(java.io.Writer)">serializeAndConsume</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>writer</code> - the character stream to write the serialized infoset to</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="serializeAndConsume(java.io.OutputStream, org.apache.axiom.om.OMOutputFormat)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serializeAndConsume</h4>
+<pre>void&nbsp;serializeAndConsume(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;output,
+                       <a href="../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om">OMOutputFormat</a>&nbsp;format)
+                         throws <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<div class="block">Serialize the node without caching.
+ <p>
+ The format of the output is controlled by the provided <a href="../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om"><code>OMOutputFormat</code></a> object. In
+ particular, <a href="../../../../org/apache/axiom/om/OMOutputFormat.html#setDoOptimize(boolean)"><code>OMOutputFormat.setDoOptimize(boolean)</code></a> can be used to instruct this method
+ to produce an XOP/MTOM encoded MIME message.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMContainer.html#serializeAndConsume(java.io.OutputStream, org.apache.axiom.om.OMOutputFormat)">serializeAndConsume</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMNode.html#serializeAndConsume(java.io.OutputStream, org.apache.axiom.om.OMOutputFormat)">serializeAndConsume</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>output</code> - the byte stream to write the serialized infoset to</dd><dd><code>format</code> - the output format to use</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="serializeAndConsume(java.io.Writer, org.apache.axiom.om.OMOutputFormat)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>serializeAndConsume</h4>
+<pre>void&nbsp;serializeAndConsume(<a href="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</a>&nbsp;writer,
+                       <a href="../../../../org/apache/axiom/om/OMOutputFormat.html" title="class in org.apache.axiom.om">OMOutputFormat</a>&nbsp;format)
+                         throws <a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<div class="block">Serialize the node without caching.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMContainer.html#serializeAndConsume(java.io.Writer, org.apache.axiom.om.OMOutputFormat)">serializeAndConsume</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMContainer.html" title="interface in org.apache.axiom.om">OMContainer</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../org/apache/axiom/om/OMNode.html#serializeAndConsume(java.io.Writer, org.apache.axiom.om.OMOutputFormat)">serializeAndConsume</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/apache/axiom/om/OMNode.html" title="interface in org.apache.axiom.om">OMNode</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>writer</code> - the character stream to write the serialized infoset to</dd><dd><code>format</code> - the output format to use</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://download.oracle.com/docs/cd/E17802_01/webservices/webservices/docs/1.5/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/OMElement.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../org/apache/axiom/om/OMDocument.html" title="interface in org.apache.axiom.om"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../org/apache/axiom/om/OMEntityReference.html" title="interface in org.apache.axiom.om"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?org/apache/axiom/om/OMElement.html" target="_top">Frames</a></li>
+<li><a href="OMElement.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &copy; <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.</small></p>
+</body>
+</html>
